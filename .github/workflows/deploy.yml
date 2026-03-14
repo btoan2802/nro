@@ -31,7 +31,7 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           password: ${{ secrets.SERVER_PASS }}
           port: 22
-          script: mkdir C:\Nro_4M\Nro_4M\target
+          script: if not exist C:\Nro_4M\Nro_4M\target mkdir C:\Nro_4M\Nro_4M\target
 
       - name: Upload jar to server
         uses: appleboy/scp-action@v0.1.7
