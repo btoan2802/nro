@@ -41,7 +41,7 @@ jobs:
           password: ${{ secrets.SERVER_PASS }}
           port: 22
           source: "Nro_4M/target/*jar-with-dependencies.jar"
-          target: "/C:/Nro_4M/Nro_4M/target"
+          target: "C:/Nro_4M/Nro_4M/target"
 
       - name: Restart server
         uses: appleboy/ssh-action@v1.0.0
