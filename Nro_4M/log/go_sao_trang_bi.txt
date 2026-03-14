@@ -1,0 +1,74 @@
+[30/07/2025 23:05:27]
+Player: [VIP 20] Vua V? Nhì 
+Account: 1
+=> Tr??c khi g? SPL:
+  [ID: 561] Nh?n Th?n Linh
+  Options:
+    - ID: 73, Param: 0
+    - ID: 107, Param: 1
+    - ID: 50, Param: 5
+    - ID: 102, Param: 1
+
+=> Sau khi g? SPL:
+  [ID: 561] Nh?n Th?n Linh
+  Options:
+    - ID: 14, Param: 15
+    - ID: 21, Param: 15
+
+------------------------------------------------------
+
+[30/07/2025 23:15:25]
+Player: [VIP 20] Vua V? Nhì 
+Account: 1
+=> Tr??c khi g? SPL:
+  [ID: 1402] Qu?n Thánh Tôn
+  Options:
+    - ID: 6, Param: 150000
+    - ID: 50, Param: 25
+    - ID: 77, Param: 20
+    - ID: 103, Param: 20
+    - ID: 101, Param: 500
+    - ID: 117, Param: 10
+    - ID: 197, Param: 0
+    - ID: 107, Param: 1
+    - ID: 102, Param: 1
+
+=> Sau khi g? SPL:
+  [ID: 1402] Qu?n Thánh Tôn
+  Options:
+    - ID: 6, Param: 150000
+    - ID: 50, Param: 20
+    - ID: 77, Param: 20
+    - ID: 103, Param: 20
+    - ID: 101, Param: 500
+    - ID: 117, Param: 10
+    - ID: 197, Param: 0
+
+------------------------------------------------------
+
+[30/07/2025 23:17:43]
+Player: [VIP 20] Vua V? Nhì 
+Account: 1
+=> Tr??c khi g? SPL:
+  [ID: 1403] Giày Thánh Tôn
+  Options:
+    - ID: 23, Param: 358
+    - ID: 222, Param: 1
+    - ID: 228, Param: 1
+    - ID: 21, Param: 200
+    - ID: 30, Param: 1
+    - ID: 107, Param: 1
+    - ID: 50, Param: 5
+    - ID: 102, Param: 1
+
+=> Sau khi g? SPL:
+  [ID: 1403] Giày Thánh Tôn
+  Options:
+    - ID: 222, Param: 1
+    - ID: 228, Param: 1
+    - ID: 23, Param: 371
+    - ID: 21, Param: 200
+    - ID: 30, Param: 1
+
+------------------------------------------------------
+

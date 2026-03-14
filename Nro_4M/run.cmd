@@ -1,0 +1,1 @@
+java -jar target/Nro-VietDev-1.0-RELEASE-jar-with-dependencies.jar

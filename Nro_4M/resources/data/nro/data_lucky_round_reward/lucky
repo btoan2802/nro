@@ -1,0 +1,21 @@
+[
+  { "id": 842, "percent": 0.5, "options": [] },
+  { "id": 841, "percent": 0.5, "options": [] },
+  { "id": 840, "percent": 0.5, "options": [] },
+  { "id": 837, "percent": 0.8, "options": [] },
+  { "id": 839, "percent": 0.8, "options": [] },
+  { "id": 838, "percent": 0.8, "options": [] },
+  { "id": 836, "percent": 1.0, "options": [] },
+  { "id": 835, "percent": 1.0, "options": [] },
+  { "id": 834, "percent": 1.0, "options": [] },
+  { "id": 833, "percent": 1.0, "options": [] },
+  { "id": 832, "percent": 1.0, "options": [] },
+  { "id": 831, "percent": 1.0, "options": [] },
+  { "id": 830, "percent": 1.0, "options": [] },
+  { "id": 829, "percent": 1.0, "options": [] },
+  { "id": 828, "percent": 1.0, "options": [] },
+  { "id": 447, "percent": 10.0, "options": [{ "id": 101, "param": "5" }] },
+  { "id": 443, "percent": 10.0, "options": [{ "id": 97, "param": "5" }] },
+  { "id": 442, "percent": 10.0, "options": [{ "id": 96, "param": "5" }] },
+  { "id": 441, "percent": 10.0, "options": [{ "id": 95, "param": "5" }] }
+]
