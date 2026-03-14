@@ -31,7 +31,8 @@ steps:
       username: ${{ secrets.SERVER_USER }}
       password: ${{ secrets.SERVER_PASS }}
       port: 22
-      script: mkdir C:\Nro_4M\Nro_4M\target
+      script: |
+        mkdir C:\Nro_4M\Nro_4M\target
 
   - name: Upload jar to server
     uses: appleboy/scp-action@v0.1.7
@@ -50,4 +51,5 @@ steps:
       username: ${{ secrets.SERVER_USER }}
       password: ${{ secrets.SERVER_PASS }}
       port: 22
-      script: C:\Nro_4M\restart_server.cmd
+      script: |
+        C:\Nro_4M\restart_server.cmd
