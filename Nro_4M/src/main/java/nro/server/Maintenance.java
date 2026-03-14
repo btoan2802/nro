@@ -41,7 +41,7 @@ public class Maintenance extends Thread {
         while (this.seconds > 0) {
             this.seconds--;
             Service.getInstance().sendThongBaoAllPlayer("Hệ thống sẽ bảo trì sau " + seconds
-                    + " giây nữa, vui lòng thoát game để tránh mất vật phẩm");
+                    + " giây nữa, vui lòng vào lại game sau 2 phút.");
             try {
                 Thread.sleep(1000);
             } catch (Exception e) {
