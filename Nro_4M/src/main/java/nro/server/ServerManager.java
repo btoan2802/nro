@@ -190,7 +190,7 @@ public class ServerManager {
                 String line = sc.nextLine();
                 if (line.equals("baotri")) {
                     new Thread(() -> {
-                        Maintenance.gI().start(5);
+                        Maintenance.gI().start(30);
                     }).start();
                 } else if (line.equals("athread")) {
                     ServerNotify.gI().notify("Debug server: " + Thread.activeCount());

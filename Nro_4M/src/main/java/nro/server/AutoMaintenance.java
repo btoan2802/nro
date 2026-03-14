@@ -55,7 +55,7 @@ public class AutoMaintenance {
         while (seconds > 0) {
             seconds--;
             Service.getInstance().sendThongBaoAllPlayer("Hệ thống sẽ bảo trì định kì sau " + seconds
-                    + " giây nữa, vui lòng thoát game để tránh mất vật phẩm.");
+                    + " giây nữa, vui lòng vào lại game sau 2 phút.");
             try {
                 Thread.sleep(1000);
             } catch (Exception e) {
