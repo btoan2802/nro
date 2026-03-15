@@ -101,6 +101,16 @@ public void rewards(Player pl) {
         Service.getInstance().dropItemMap(this.zone, itemMap);
     }
 
+    // 🔥 80% rơi thêm item 725
+    if (Util.isTrue(80, 100)) {
+        ItemMap item725 = new ItemMap(this.zone, 725, 1,
+                pl.location.x,
+                this.zone.map.yPhysicInTop(pl.location.x, pl.location.y - 24),
+                pl.id);
+
+        Service.getInstance().dropItemMap(this.zone, item725);
+    }
+
     // 🔥 luôn rơi thêm item 1400 (1 -> 10 cái)
     int amount = Util.nextInt(1, 10);
     int offset = 0;
