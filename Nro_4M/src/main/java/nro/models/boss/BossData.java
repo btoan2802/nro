@@ -1936,7 +1936,7 @@ public class BossData {
         .typeDame(Boss.DAME_NORMAL)
         .typeHp(Boss.HP_NORMAL)
         .dame(2100000000) // 500 nghìn tỷ dame
-        .hp(new double[][]{{10_000_000_000_000_000_000D}}) // 1e18 HP (1 quintillion)
+        .hp(new double[][]{{10_000_000_000_000_000D}}) // 1e18 HP (1 quintillion)
         .outfit(new short[]{1312, 1313, 1314})
         .mapJoin(new short[]{5, 108, 109, 110})
         .skillTemp(new int[][]{
