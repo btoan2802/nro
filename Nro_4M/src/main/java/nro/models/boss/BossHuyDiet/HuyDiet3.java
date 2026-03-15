@@ -76,6 +76,8 @@ public void rewards(Player pl) {
     // luôn rơi 1 item 1547
     itemMap = new ItemMap(this.zone, 1547, 1,
             this.location.x + 5, this.location.y, pl.id);
+                // thêm option không thể giao dịch
+    itemMap.options.add(new ItemOption(30, 0));
     Service.getInstance().dropItemMap(this.zone, itemMap);
 
     // rơi vàng 861 (random 1 -> 10 cục)

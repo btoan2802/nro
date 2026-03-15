@@ -151,8 +151,8 @@ public class BossData {
             ConstPlayer.XAYDA, //gender
             Boss.DAME_NORMAL, //type dame
             Boss.HP_NORMAL, //type hp
-            10000, //dame
-            new double[][]{{500_000_000_000L}}, //hp
+            1000000000, //dame
+            new double[][]{{30_000_000_000_000L}}, //hp
             new short[]{1631, 1632, 1633}, //outfit
             new short[]{29, 30, 31, 32, 33, 34, 35, 36, 37, 38}, //map join
             new int[][]{ //skill
