@@ -7,7 +7,7 @@ import nro.models.skill.Skill;
 
 public class Final_Static {
 
-    public static final boolean EFF_MAP = false; //true là mở effmap - false là tắt effmap
+    public static final boolean EFF_MAP = true; //true là mở effmap - false là tắt effmap
     public static final boolean LOCK_MAP_CHUNGSINHBINHDANG = true; //true là khóa  - false là mở
     public static final short[] VatPhamRoiChungSinhBinhDang = {1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994}; // Vật phẩm map chúng sinh bình đẳng
     public static final short[] ItemRoiChungSinhBinhDang = {1849, 1850, 1851, 1852, 1853, 1854, 1855, 1856, 1857}; // Item map chúng sinh bình đẳng

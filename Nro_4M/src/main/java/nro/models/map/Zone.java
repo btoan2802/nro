@@ -527,9 +527,9 @@ public class Zone {
             synchronized (itemMap) {
                 if (!itemMap.isPickedUp) {
                     if (itemMap.playerId == player.id || itemMap.playerId == -1 || itemMap.playerId == (10_000 - player.id)) {
-                        if (itemMap.itemTemplate.id == 934 && player.bongtai >= 400) {
-                            Service.getInstance().sendThongBao(player, "Mỗi ngày chỉ nhặt được 400 Mảnh hồn");
-                            return;
+                        // if (itemMap.itemTemplate.id == 934 && player.bongtai >= 400) {
+                        //     Service.getInstance().sendThongBao(player, "Mỗi ngày chỉ nhặt được 400 Mảnh hồn");
+                        //     return;
                         } else if (itemMap.itemTemplate.id == 934 && player.bongtai < 400) {
                             player.bongtai++;
                             InventoryService.gI().sendItemBags(player);
