@@ -3750,7 +3750,7 @@ public class BossData {
             Boss.DAME_NORMAL, //type dame
             Boss.HP_NORMAL, //type hp
             2000000000, //dame
-            new double[][]{{500_000_000_000_000_000_000_000_000D}}, //hp
+            new double[][]{{50_000_000_000_000_000_000D}}, //hp
             new short[]{1816, 1817, 1818}, //outfit
             new short[]{106}, //map join
             new int[][]{ //skill
@@ -3766,9 +3766,9 @@ public class BossData {
             Boss.DAME_NORMAL, //type dame
             Boss.HP_NORMAL, //type hp
             2000000, //dame
-            new double[][]{{500_000_000_000_000_000_000_000_000D}}, //hp
+            new double[][]{{50_000_000_000_000_000_000D}}, //hp
             new short[]{1819, 1820, 1821}, //outfit
-            new short[]{106}, //map join
+            new short[]{108}, //map join
             new int[][]{ //skill
                 {Skill.DRAGON, 1, 1000}, {Skill.DRAGON, 2, 2000}, {Skill.DRAGON, 3, 3000}, {Skill.DRAGON, 7, 7000},
                 {Skill.ANTOMIC, 1, 1000}, {Skill.ANTOMIC, 2, 1200}, {Skill.ANTOMIC, 4, 1500}, {Skill.ANTOMIC, 5, 1700},
@@ -3784,7 +3784,7 @@ public class BossData {
             2000000000, //dame
             new double[][]{{900_000_000_000_000_000_000_000_000D}}, //hp
             new short[]{1813, 1814, 1815}, //outfit
-            new short[]{106}, //map join
+            new short[]{107}, //map join
             new int[][]{ //skill
                 {Skill.DRAGON, 1, 1000}, {Skill.DRAGON, 2, 2000}, {Skill.DRAGON, 3, 3000}, {Skill.DRAGON, 7, 7000},
                 {Skill.ANTOMIC, 1, 1000}, {Skill.ANTOMIC, 2, 1200}, {Skill.ANTOMIC, 4, 1500}, {Skill.ANTOMIC, 5, 1700},

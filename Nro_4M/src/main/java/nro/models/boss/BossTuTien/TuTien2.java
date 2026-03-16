@@ -34,27 +34,36 @@ public class TuTien2 extends Boss {
     }
 
     @Override
-    public void attack() {
-        try {
-            Player pl = getPlayerAttack();
-            if (pl != null) {
-                if (!useSpecialSkill()) {
-                    this.playerSkill.skillSelect = this.getSkillAttack();
-                    if (Util.getDistance(this, pl) <= this.getRangeCanAttackWithSkillSelect()) {
-                        if (Util.isTrue(15, ConstRatio.PER100) && SkillUtil.isUseSkillChuong(this)) {
-                            goToXY(pl.location.x + (Util.getOne(-1, 1) * Util.nextInt(20, 80)),
-                                    Util.nextInt(10) % 2 == 0 ? pl.location.y : pl.location.y - Util.nextInt(0, 50), false);
-                        }
-                        SkillService.gI().useSkill(this, pl, null, null);
-                        checkPlayerDie(pl);
-                    } else {
-                        goToPlayer(pl, false);
-                    }
-                }
-            }
-        } catch (Exception ex) {
+public void attack() {
+    try {
+        Player pl = getPlayerAttack();
+
+        // nếu boss chưa có target thì lấy player bất kỳ trong map
+        if (pl == null && this.zone != null && !this.zone.getPlayers().isEmpty()) {
+            pl = this.zone.getPlayers().get(0);
         }
+
+        if (pl == null) {
+            return;
+        }
+
+        if (!useSpecialSkill()) {
+            this.playerSkill.skillSelect = this.getSkillAttack();
+
+            int distance = Util.getDistance(this, pl);
+
+            if (distance <= 300) {
+                SkillService.gI().useSkill(this, pl, null, null);
+                checkPlayerDie(pl);
+            } else {
+                goToPlayer(pl, false);
+            }
+        }
+
+    } catch (Exception e) {
+        e.printStackTrace();
     }
+}
 
     @Override
     public void rewards(Player pl) {

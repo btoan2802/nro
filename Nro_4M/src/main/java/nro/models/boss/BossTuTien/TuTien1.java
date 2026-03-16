@@ -23,11 +23,6 @@ public class TuTien1 extends Boss {
     }
 
     // QUAN TRỌNG: để boss hoạt động và tự đánh
-    @Override
-    public void active() {
-        super.active();
-        this.attack();
-    }
 
     @Override
     protected boolean useSpecialSkill() {
