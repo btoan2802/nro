@@ -531,7 +531,7 @@ public class Zone {
                         //     Service.getInstance().sendThongBao(player, "Mỗi ngày chỉ nhặt được 400 Mảnh hồn");
                         //     return;
                         // }
-                        if (itemMap.itemTemplate.id == 934 && player.bongtai < 400) {
+                        if (itemMap.itemTemplate.id == 934) {
                             player.bongtai++;
                             InventoryService.gI().sendItemBags(player);
                             Service.getInstance().sendToAntherMePickItem(player, itemMapId);
