@@ -2429,16 +2429,20 @@ public class Service {
                         msg.writer().writeShort(skill.skillId);
                     } else {
                         msg.writer().writeShort(-1);
-                        switch (i) {
-                            case 1 ->
-                                msg.writer().writeUTF("Cần đạt sức mạnh 150tr để mở");
-                            case 2 ->
-                                msg.writer().writeUTF("Cần đạt sức mạnh 1tỷ5 để mở");
-                            case 3 ->
-                                msg.writer().writeUTF("Cần đạt sức mạnh 20tỷ để mở");
-                            default ->
-                                msg.writer().writeUTF("Cần đạt sức mạnh tối thượng\nđể mở");
-                        }
+                switch (i) {
+                    case 1 ->
+                        msg.writer().writeUTF("Cần đạt sức mạnh 150tr để mở");
+                    case 2 ->
+                        msg.writer().writeUTF("Cần đạt sức mạnh 1tỷ5 để mở");
+                    case 3 ->
+                        msg.writer().writeUTF("Cần đạt sức mạnh 20tỷ để mở");
+                    case 4 ->
+                        msg.writer().writeUTF("Cần đạt sức mạnh 50tỷ để mở");
+                    case 5 ->
+                        msg.writer().writeUTF("Cần đạt sức mạnh 100tỷ để mở");
+                    default ->
+                        msg.writer().writeUTF("Chưa mở");
+                }
                     }
                 }
                 pl.sendMessage(msg);
