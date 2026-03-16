@@ -179,7 +179,7 @@ public class EffectSkin {
                         }
                     }
                     for (Player pl : players) {
-                        Service.getInstance().chat(pl, "Sức mạnh thật kinh khủng SOS.....");
+                        //Service.getInstance().chat(pl, "Sức mạnh thật kinh khủng SOS.....");
                         EffSkinService.gI().setSlow(pl, System.currentTimeMillis(), 100000);
                     }
                     this.lastTimeBuiBui = System.currentTimeMillis();
