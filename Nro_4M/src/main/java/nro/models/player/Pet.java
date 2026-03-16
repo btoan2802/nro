@@ -1010,16 +1010,6 @@ public class Pet extends Player {
                         openSkill4();
                     }
                     break;
-                case 4:
-                    if (this.nPoint.power >= 50_000_000_000L) {
-                        openSkill5();
-                    }
-                    break;
-                case 5:
-                    if (this.nPoint.power >= 100_000_000_000L) {
-                        openSkill6();
-                    }
-                    break;
             }
         }
     }
@@ -1075,45 +1065,6 @@ public class Pet extends Player {
         }
         this.playerSkill.skills.set(3, skill); // skill 4
     }
-        public void openSkill5() {
-            Skill skill = null;
-
-            int tiLePhanThan = 30;
-            int tiLeDichChuyen = 40;
-            int tiLeKenhKhi = 30;
-
-            int rd = Util.nextInt(1,100);
-
-            if (rd <= tiLePhanThan) {
-                skill = SkillUtil.createSkill(Skill.PHAN_THAN,1);
-            } 
-            else if (rd <= tiLePhanThan + tiLeDichChuyen) {
-                skill = SkillUtil.createSkill(Skill.DICH_CHUYEN_TUC_THOI,1);
-            } 
-            else {
-                skill = SkillUtil.createSkill(Skill.QUA_CAU_KENH_KHI,1);
-            }
-
-            this.playerSkill.skills.set(4, skill); // skill 5
-        }
-        public void openSkill6() {
-            Skill skill = null;
-            int tiLeTaiTao = 30;
-            int tiLeThoiMien = 40;
-            int tiLeHuytSao = 30;
-
-            int rd = Util.nextInt(1, 100);
-
-            if (rd <= tiLeTaiTao) {
-                skill = SkillUtil.createSkill(Skill.TAI_TAO_SUC_MANH, 1);
-            } else if (rd <= tiLeTaiTao + tiLeThoiMien) {
-                skill = SkillUtil.createSkill(Skill.THOI_MIEN, 1);
-            } else {
-                skill = SkillUtil.createSkill(Skill.HUYT_SAO, 1);
-            }
-
-            this.playerSkill.skills.set(5, skill); // skill 6
-        }
     
 
     private Skill getSkill(int indexSkill) {
