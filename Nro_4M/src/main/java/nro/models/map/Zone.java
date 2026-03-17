@@ -526,7 +526,9 @@ public class Zone {
         if (itemMap != null && !itemMap.isPickedUp) {
             synchronized (itemMap) {
                 if (!itemMap.isPickedUp) {
-                    if (itemMap.playerId == player.id || itemMap.playerId == -1 || itemMap.playerId == (10_000 - player.id)) {
+                    if (itemMap.playerId != player.id && itemMap.playerId != -1 && itemMap.playerId != (10_000 - player.id)) {
+                        Service.getInstance().sendThongBao(player, "Không thể nhặt vật phẩm của người khác");
+                    } else {
                         // if (itemMap.itemTemplate.id == 934 && player.bongtai >= 400) {
                         //     Service.getInstance().sendThongBao(player, "Mỗi ngày chỉ nhặt được 400 Mảnh hồn");
                         //     return;
@@ -541,9 +543,9 @@ public class Zone {
 //                                Service.getInstance().sendThongBao(player, "Mỗi ngày chỉ nhặt được 500 Mảnh thiên sứ");
 //                                return;
 //                            } else if (isManhTS(itemMap) && player.thiensu < 500) {
-                            player.thiensu++;
-                            InventoryService.gI().sendItemBags(player);
-                            Service.getInstance().sendToAntherMePickItem(player, itemMapId);
+player.thiensu++;
+InventoryService.gI().sendItemBags(player);
+Service.getInstance().sendToAntherMePickItem(player, itemMapId);
 //                            }
                         }
                         if (itemMap.itemTemplate.id == 648) {
@@ -644,8 +646,6 @@ public class Zone {
                                 Service.getInstance().sendThongBao(player, text);
                             }
                         }
-                    } else {
-                        Service.getInstance().sendThongBao(player, "Không thể nhặt vật phẩm của người khác");
                     }
                 }
             }

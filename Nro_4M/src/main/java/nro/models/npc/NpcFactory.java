@@ -926,7 +926,8 @@ public class NpcFactory {
                                                     "|7|CHUYỂN SINH SƯ PHỤ"
                                                     + "\n\n|5|Bạn đang chuyển sinh : " + player.chuyensinhsuphu
                                                     + " \nCấp tiếp theo với tỉ lệ : " + Service.getInstance().tileChuyensinh(player.chuyensinhsuphu)
-                                                    + "% \n Mức giá chuyển sinh : " + ((player.chuyensinhsuphu <= 45) ? "1000 Thỏi vàng" : "30 " + ConstItem.NAME_XU_SERVER)
+                                                    + " \n Mức giá chuyển sinh : " 
+                                                    + ((player.chuyensinhsuphu <= 45) ? "1000 Thỏi vàng" : "30 Thỏi vàng")
                                                     + "\n\n|7|Bạn có muốn chuyển sinh ?",
                                                     "Đồng ý", "Từ chối");
                                             break;
@@ -962,19 +963,19 @@ public class NpcFactory {
                                         npcChat(player, "|7|Bạn chưa đủ sức mạnh yêu cầu để Chuyển sinh");
                                     } else {
                                         Item thoivang = null;
-                                        Item datitan = null;
                                         Item nguyenlieu = null;
                                         int soluong;
+
                                         try {
-                                            thoivang = InventoryService.gI().findItemBagByTemp(player, 457);
-                                            datitan = InventoryService.gI().findItemBagByTemp(player, 1400);
+                                            thoivang = InventoryService.gI().findItemBagByTemp(player, ConstItem.THOI_VANG);
                                         } catch (Exception e) {
                                         }
+
                                         if (player.chuyensinhsuphu <= 45) {
                                             nguyenlieu = thoivang;
                                             soluong = 1000;
                                         } else {
-                                            nguyenlieu = datitan;
+                                            nguyenlieu = thoivang;
                                             soluong = 30;
                                         }
                                         if (nguyenlieu == null || nguyenlieu.quantity < soluong) {
