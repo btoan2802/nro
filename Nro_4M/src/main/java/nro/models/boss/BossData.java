@@ -3624,7 +3624,7 @@ public class BossData {
             ConstPlayer.TRAI_DAT,
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
-            2000000000,
+            2000000000,//dame
             new double[][]{{100_000_000_000_000_000D}},
             new short[]{1598, 1580, 1581, 107, 155}, // Head, Body, Leg, Aura, Flag
             new short[]{5, 33, 42,63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
@@ -3672,7 +3672,7 @@ public class BossData {
                 {Skill.KAMEJOKO, 7, 300},
                 {Skill.THAI_DUONG_HA_SAN, 3, 50000},
                 {Skill.BIEN_KHI, 7, 50000},
-                {Skill.KHIEN_NANG_LUONG, 7, 50000}
+                {Skill.KHIEN_NANG_LUONG, 7, 50000},
                 {Skill.GALICK, 7, 300}
             },
             _10_PHUT
