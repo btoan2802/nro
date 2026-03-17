@@ -3359,7 +3359,7 @@ public class BossData {
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
             2000000000,
-            new double[][]{{100_000_000_000_000_000D}},
+            new double[][]{{10_000_000_000_000_000D}},
             new short[]{1586, 1595, 1596, 118, 161}, // Head, Body, Leg, Aura, Flag
             new short[]{5, 33, 42, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
                 76, 77, 78, 79, 80, 81, 82, 83, 104, 105, 106, 107, 108, 109, 110}, //map join
@@ -3404,7 +3404,7 @@ public class BossData {
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
             2000000000,
-            new double[][]{{100_000_000_000_000_000D}},
+            new double[][]{{10_000_000_000_000_000D}},
             new short[]{1586, 1595, 1596, 118, 161}, // Head, Body, Leg, Aura, Flag
             new short[]{5, 33, 42, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
                 76, 77, 78, 79, 80, 81, 82, 83, 84, 104, 105, 106, 107, 108, 109, 110}, //map join
@@ -3426,7 +3426,7 @@ public class BossData {
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
             2000000000,
-            new double[][]{{100_000_000_000_000_000D}},
+            new double[][]{{10_000_000_000_000_000D}},
             new short[]{1586, 1595, 1596, 118, 161}, // Head, Body, Leg, Aura, Flag
             new short[]{5, 33, 42,63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
                 76, 77, 78, 79, 80, 81, 82, 83, 84, 104, 105, 106, 107, 108, 109, 110}, //map join
@@ -3448,7 +3448,7 @@ public class BossData {
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
             2000000000,
-            new double[][]{{100_000_000_000_000_000D}},
+            new double[][]{{10_000_000_000_000_000D}},
             new short[]{1586, 1595, 1596, 118, 161}, // Head, Body, Leg, Aura, Flag
             new short[]{5, 33, 42, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
                 76, 77, 78, 79, 80, 81, 82, 83, 84, 104, 105, 106, 107, 108, 109, 110}, //map join
@@ -3470,7 +3470,7 @@ public class BossData {
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
             2000000000,
-            new double[][]{{100_000_000_000_000_000D}},
+            new double[][]{{10_000_000_000_000_000D}},
             new short[]{1640, 1643, 1644, 115, 165}, // Head, Body, Leg, Aura, Flag
             new short[]{5, 33, 42,63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
                 76, 77, 78, 79, 80, 81, 82, 83, 84, 104, 105, 106, 107, 108, 109, 110}, //map join
@@ -3493,7 +3493,7 @@ public class BossData {
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
             2000000000,
-            new double[][]{{100_000_000_000_000_000D}},
+            new double[][]{{10_000_000_000_000_000D}},
             new short[]{1640, 1643, 1644, 115, 165}, // Head, Body, Leg, Aura, Flag
             new short[]{5, 33, 42,63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
                 76, 77, 78, 79, 80, 81, 82, 83, 84, 104, 105, 106, 107, 108, 109, 110}, //map join
@@ -3515,7 +3515,7 @@ public class BossData {
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
             2000000000,
-            new double[][]{{100_000_000_000_000_000D}},
+            new double[][]{{10_000_000_000_000_000D}},
             new short[]{1640, 1643, 1644, 115, 165}, // Head, Body, Leg, Aura, Flag
             new short[]{5, 33, 42,63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
                 76, 77, 78, 79, 80, 81, 82, 83, 84, 104, 105, 106, 107, 108, 109, 110}, //map join
@@ -3537,7 +3537,7 @@ public class BossData {
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
             2000000000,
-            new double[][]{{100_000_000_000_000_000D}},
+            new double[][]{{10_000_000_000_000_000D}},
             new short[]{1640, 1643, 1644, 115, 165}, // Head, Body, Leg, Aura, Flag
             new short[]{5, 33, 42,63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
                 76, 77, 78, 79, 80, 81, 82, 83, 84, 104, 105, 106, 107, 108, 109, 110}, //map join
@@ -3559,7 +3559,7 @@ public class BossData {
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
             2000000000,
-            new double[][]{{100_000_000_000_000_000D}},
+            new double[][]{{10_000_000_000_000_000D}},
             new short[]{1640, 1643, 1644, 115, 165}, // Head, Body, Leg, Aura, Flag
             new short[]{5, 33, 42,63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
                 76, 77, 78, 79, 80, 81, 82, 83, 84, 104, 105, 106, 107, 108, 109, 110}, //map join
@@ -3580,7 +3580,7 @@ public class BossData {
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
             2000000000,
-            new double[][]{{100_000_000_000_000_000D}},
+            new double[][]{{10_000_000_000_000_000D}},
             new short[]{1598, 1580, 1581, 107, 155}, // Head, Body, Leg, Aura, Flag
             new short[]{5, 33, 42, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
                 76, 77, 78, 79, 80, 81, 82, 83, 84, 104, 105, 106, 107, 108, 109, 110}, //map join
@@ -3601,7 +3601,7 @@ public class BossData {
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
             2000000000,
-            new double[][]{{100_000_000_000_000_000D}},
+            new double[][]{{10_000_000_000_000_000D}},
             new short[]{1598, 1580, 1581, 107, 155}, // Head, Body, Leg, Aura, Flag
             new short[]{5, 33, 42, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
                 76, 77, 78, 79, 80, 81, 82, 83, 84, 104, 105, 106, 107, 108, 109, 110}, //map join
@@ -3622,7 +3622,7 @@ public class BossData {
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
             2000000000,
-            new double[][]{{100_000_000_000_000_000D}},
+            new double[][]{{10_000_000_000_000_000D}},
             new short[]{1598, 1580, 1581, 107, 155}, // Head, Body, Leg, Aura, Flag
             new short[]{5, 33, 42,63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
                 76, 77, 78, 79, 80, 81, 82, 83, 84, 104, 105, 106, 107, 108, 109, 110}, //map join
@@ -3643,7 +3643,7 @@ public class BossData {
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
             2000000000,//dame
-            new double[][]{{100_000_000_000_000_000D}},
+            new double[][]{{10_000_000_000_000_000D}},
             new short[]{1598, 1580, 1581, 107, 155}, // Head, Body, Leg, Aura, Flag
             new short[]{5, 33, 42,63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
                 76, 77, 78, 79, 80, 81, 82, 83, 84, 104, 105, 106, 107, 108, 109, 110}, //map join
@@ -3664,7 +3664,7 @@ public class BossData {
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
             2000000000,
-            new double[][]{{100_000_000_000_000_000D}},
+            new double[][]{{10_000_000_000_000_000D}},
             new short[]{1598, 1580, 1581, 107, 155}, // Head, Body, Leg, Aura, Flag
             new short[]{5, 33, 42, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
                 76, 77, 78, 79, 80, 81, 82, 83, 84, 104, 105, 106, 107, 108, 109, 110}, //map join
