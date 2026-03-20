@@ -384,6 +384,11 @@ public class EffectSkillService {
             player.effectSkill.levelBienHinh++;
             ItemTimeService.gI().sendAllItemTime(player);
         }
+                // 🔥 THÊM DÒNG NÀY (QUAN TRỌNG NHẤT)
+            player.effectSkill.lastTimeUpBienHinh = System.currentTimeMillis();
+
+            ItemTimeService.gI().sendAllItemTime(player);
+            System.out.println("LevelBienHinh: " + player.effectSkill.levelBienHinh);
     }
 
     //hiệu ứng tái tạo
