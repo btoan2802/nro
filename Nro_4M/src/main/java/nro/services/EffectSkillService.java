@@ -377,20 +377,32 @@ public class EffectSkillService {
         return 0;
     }
 
-    public void setIsTaiTao(Player player) {
-        Skill skillBienHinh = SkillUtil.getSkillbyId(player, Skill.BIEN_HINH);
-        if (player.effectSkill.levelBienHinh < skillBienHinh.point) {
-            ItemTimeService.gI().removeItemTime(player, DataGame.ICON_BIENHINH[player.gender][player.effectSkill.levelBienHinh - 1]);
-            player.effectSkill.levelBienHinh++;
-            ItemTimeService.gI().sendAllItemTime(player);
+public void setIsTaiTao(Player player) {
+    Skill skillBienHinh = SkillUtil.getSkillbyId(player, Skill.BIEN_HINH);
+
+    if (player.effectSkill.levelBienHinh < skillBienHinh.point) {
+        ItemTimeService.gI().removeItemTime(player,
+            DataGame.ICON_BIENHINH[player.gender][player.effectSkill.levelBienHinh - 1]);
+
+        player.effectSkill.levelBienHinh++;
+
+        if (player.effectSkill.levelBienHinh > 5) {
+            player.effectSkill.levelBienHinh = 5;
         }
-                // 🔥 THÊM DÒNG NÀY (QUAN TRỌNG NHẤT)
-            player.effectSkill.lastTimeUpBienHinh = System.currentTimeMillis();
 
-            ItemTimeService.gI().sendAllItemTime(player);
-            System.out.println("LevelBienHinh: " + player.effectSkill.levelBienHinh);
+        // 🔥 FIX 1: refresh time (tránh bị mất effect)
+        player.effectSkill.lastTimeUpBienHinh = System.currentTimeMillis();
+
+        // 🔥 FIX 2: update lại chỉ số
+        Service.getInstance().point(player);
+        PlayerService.gI().sendInfoHpMp(player);
+
+        // 🔥 FIX 3: update lại hiệu ứng (animation)
+        sendEffectBienHinh(player);
+
+        ItemTimeService.gI().sendAllItemTime(player);
     }
-
+}
     //hiệu ứng tái tạo
     public void sendEffectTaiTao(Player player) {
         Message msg;
