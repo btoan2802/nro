@@ -386,10 +386,6 @@ public void setIsTaiTao(Player player) {
 
         player.effectSkill.levelBienHinh++;
 
-        if (player.effectSkill.levelBienHinh > 5) {
-            player.effectSkill.levelBienHinh = 5;
-        }
-
         // 🔥 FIX 1: refresh time (tránh bị mất effect)
         player.effectSkill.lastTimeUpBienHinh = System.currentTimeMillis();
 
