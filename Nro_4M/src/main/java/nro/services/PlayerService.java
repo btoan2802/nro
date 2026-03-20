@@ -229,8 +229,8 @@ public class PlayerService {
         playerBaned.isBan = true;
     }
 
-    private static final int COST_GOLD_HOI_SINH = 20000000;
-    private static final long COOLDOWN_HOI_SINH = 5_000; // 5 giây
+    private static final int COST_GOLD_HOI_SINH = 2000;
+    private static final long COOLDOWN_HOI_SINH = 0; // 5 giây
 
     public void hoiSinh(Player player) {
         if (player.isDie()) {

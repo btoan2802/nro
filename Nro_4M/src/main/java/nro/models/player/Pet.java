@@ -363,7 +363,7 @@ public class Pet extends Player {
                             for (Player pl : plist) {
                                 if (pl != null) {
                                     synchronized (pl) {
-                                        if (pl != null && this.enemies2.contains(pl) && !pl.isMiniPet) {
+                                        if (pl != null && !pl.isMiniPet) {
                                             if (pl.isDie()) {
 
                                             } else {
@@ -371,9 +371,7 @@ public class Pet extends Player {
                                                 int d = Util.getDistance(this, pl);
                                                 if (d <= dis) {
                                                     dis = d;
-                                                    if (canAttackPlayer(this, pl)) {
-                                                        attackPl = true;
-                                                    }
+                                                    attackPl = true;
                                                 }
                                             }
                                         }
@@ -468,7 +466,7 @@ public class Pet extends Player {
                             for (Player pl : plist2) {
                                 if (pl != null) {
                                     synchronized (pl) {
-                                        if (pl != null && this.enemies2.contains(pl) && !pl.isMiniPet) {
+                                        if (pl != null && !pl.isMiniPet) {
                                             if (pl.isDie()) {
 
                                             } else {
@@ -477,7 +475,7 @@ public class Pet extends Player {
                                                 int d = Util.getDistance(this, pl);
                                                 if (d <= dis) {
                                                     dis = d;
-                                                    if (SkillService.gI().canAttackPlayer(this, pl)) {
+                                                    if (pl != null && !pl.isMiniPet) {
                                                         attackPl2 = true;
                                                     }
 
