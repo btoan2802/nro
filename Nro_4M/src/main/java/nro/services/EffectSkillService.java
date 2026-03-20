@@ -373,6 +373,9 @@ public class EffectSkillService {
                 
             case 5: 
                 return 375;
+
+            case 6: 
+                return 450; // 🔥 THÊM DÒNG NÀY
         }
         return 0;
     }
