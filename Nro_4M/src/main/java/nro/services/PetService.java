@@ -421,12 +421,11 @@ public class PetService {
         for (int i = 0; i < 12; i++) {
             pet.inventory.itemsBody.add(ItemService.gI().createItemNull());
         }
-        pet.playerSkill.skills.add(SkillUtil.createSkill(Util.nextInt(0, 2) * 2, 1));
-        pet.playerSkill.skills.clear();
+pet.playerSkill.skills.add(SkillUtil.createSkill(Util.nextInt(0, 2) * 2, 1));
 
-        for (int i = 0; i < 3; i++) {
-            pet.playerSkill.skills.add(SkillUtil.createEmptySkill());
-        }
+for (int i = 0; i < 5; i++) {
+    pet.playerSkill.skills.add(SkillUtil.createEmptySkill());
+}
         pet.nPoint.calPoint();
         pet.nPoint.setFullHpMp();
         pet.nPoint.initPowerLimit();
