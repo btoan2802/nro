@@ -317,9 +317,23 @@ public class Pet extends Player {
             return false;
         }
     }
+private void updatePower() {
+    if (this.playerSkill == null || this.playerSkill.skills == null) return;
 
+    int size = this.playerSkill.skills.size();
+
+    if (size < 2 && this.nPoint.power >= 150_000_000) openSkill2();
+    if (size < 3 && this.nPoint.power >= 1_500_000_000) openSkill3();
+    if (size < 4 && this.nPoint.power >= 20_000_000_000L) openSkill4();
+    if (size < 5 && this.nPoint.power >= 50_000_000_000L) openSkill5();
+    if (size < 6 && this.nPoint.power >= 100_000_000_000L) openSkill6();
+}
     @Override
     public void update() {
+
+        
+
+
         try {
             super.update();
             increasePoint(); //cộng chỉ số
@@ -1030,33 +1044,7 @@ private boolean useSkill6() {
         return mobAtt;
     }
 
-    switch (this.playerSkill.getSizeSkill()) {
-        case 1:
-            if (this.nPoint.power >= 150_000_000) {
-                openSkill2();
-            }
-            break;
-        case 2:
-            if (this.nPoint.power >= 1_500_000_000) {
-                openSkill3();
-            }
-            break;
-        case 3:
-            if (this.nPoint.power >= 20_000_000_000L) {
-                openSkill4();
-            }
-            break;
-        case 4:
-            if (this.nPoint.power >= 50_000_000_000L) {
-                openSkill5();
-            }
-            break;
-        case 5:
-            if (this.nPoint.power >= 100_000_000_000L) {
-                openSkill6();
-            }
-            break;
-    }
+
 
     public void openSkill2() {
         Skill skill = null;
@@ -1110,7 +1098,7 @@ private boolean useSkill6() {
         this.playerSkill.skills.set(3, skill);
     }
 
-    public void openSkill5() {
+public void openSkill5() {
     Skill skill = null;
 
     int rd = Util.nextInt(1, 100);
@@ -1125,6 +1113,8 @@ private boolean useSkill6() {
 
     if (this.playerSkill.skills.size() > 4) {
         this.playerSkill.skills.set(4, skill);
+    } else {
+        this.playerSkill.skills.add(skill); // 🔥 THÊM DÒNG NÀY
     }
 }
 public void openSkill6() {
@@ -1140,6 +1130,8 @@ public void openSkill6() {
 
     if (this.playerSkill.skills.size() > 5) {
         this.playerSkill.skills.set(5, skill);
+    } else {
+        this.playerSkill.skills.add(skill); // 🔥 THÊM DÒNG NÀY
     }
 }
 
