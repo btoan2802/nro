@@ -14,24 +14,15 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup Java
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v3
         with:
-          distribution: temurin
+          distribution: 'temurin'
           java-version: '17'
 
       - name: Build Maven
         run: |
           cd Nro_4M
           mvn clean package -DskipTests
-
-      - name: Ensure target folder exists on server
-        uses: appleboy/ssh-action@v1.0.0
-        with:
-          host: ${{ secrets.SERVER_IP }}
-          username: ${{ secrets.SERVER_USER }}
-          password: ${{ secrets.SERVER_PASS }}
-          port: 22
-          script: if not exist C:\Nro_4M\Nro_4M\target mkdir C:\Nro_4M\Nro_4M\target
 
       - name: Upload jar to server
         uses: appleboy/scp-action@v0.1.7
@@ -50,4 +41,6 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           password: ${{ secrets.SERVER_PASS }}
           port: 22
-          script: C:\Nro_4M\restart_server.cmd
+          script: |
+            cd C:\Nro_4M
+            restart_server.cmd
