@@ -2440,6 +2440,12 @@ public class Service {
                     case 3 -> 
                         msg.writer().writeUTF("Cần đạt sức mạnh 20tỷ để mở"); 
 
+                    case 4 -> 
+                        msg.writer().writeUTF("Cần đạt sức mạnh 50 tỷ để mở");
+
+                    case 5 -> 
+                        msg.writer().writeUTF("Cần đạt sức mạnh 100 tỷ để mở");
+
                     default -> 
                         msg.writer().writeUTF("Cần đạt sức mạnh tối thượng\nđể mở");
                         }
