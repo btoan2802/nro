@@ -422,6 +422,8 @@ public class PetService {
             pet.inventory.itemsBody.add(ItemService.gI().createItemNull());
         }
         pet.playerSkill.skills.add(SkillUtil.createSkill(Util.nextInt(0, 2) * 2, 1));
+        pet.playerSkill.skills.clear();
+
         for (int i = 0; i < 3; i++) {
             pet.playerSkill.skills.add(SkillUtil.createEmptySkill());
         }
@@ -449,6 +451,7 @@ public class PetService {
             pet.inventory.itemsBody.add(ItemService.gI().createItemNull());
         }
         pet.playerSkill.skills.add(SkillUtil.createSkill(Util.nextInt(0, 2) * 2, 1));
+        pet.playerSkill.skills.clear();
         for (int i = 0; i < 3; i++) {
             pet.playerSkill.skills.add(SkillUtil.createEmptySkill());
         }
