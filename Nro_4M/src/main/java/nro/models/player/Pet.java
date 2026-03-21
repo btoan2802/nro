@@ -484,7 +484,7 @@ private void updatePower() {
                     }
                     break;
                 case ATTACK:
-                    if (useSkill3() || useSkill4()) {
+                    if (useSkill3() || useSkill4() || useSkill5() || useSkill6()) {
                         break;
                     }
                     boolean attackPl2 = false;
@@ -736,17 +736,19 @@ private void updatePower() {
             return false;
         }
     }
-    private boolean useSkill5() {
+ private boolean useSkill5() {
     try {
         this.playerSkill.skillSelect = getSkill(5);
-        if (this.playerSkill.skillSelect.skillId == -1) {
-            return false;
-        }
+        if (this.playerSkill.skillSelect.skillId == -1) return false;
+
+        Mob mob = this.mobAttack != null ? this.mobAttack : findMobAttack();
+        Player pl = this.playerAttack != null ? this.playerAttack : getPlayerEnimeInMap();
 
         if (SkillService.gI().canUseSkillWithCooldown(this)
-                && SkillService.gI().canUseSkillWithMana(this)) {
+                && SkillService.gI().canUseSkillWithMana(this)
+                && (mob != null || pl != null)) {
 
-            SkillService.gI().useSkill(this, playerAttack, mobAttack, null);
+            SkillService.gI().useSkill(this, pl, mob, null);
             return true;
         }
 
@@ -758,18 +760,27 @@ private void updatePower() {
 private boolean useSkill6() {
     try {
         this.playerSkill.skillSelect = getSkill(6);
+
+        // không có skill thì bỏ
         if (this.playerSkill.skillSelect.skillId == -1) {
             return false;
         }
 
-        if (SkillService.gI().canUseSkillWithCooldown(this)
-                && SkillService.gI().canUseSkillWithMana(this)) {
+        // lấy target chuẩn (fix null)
+        Mob mob = this.mobAttack != null ? this.mobAttack : findMobAttack();
+        Player pl = this.playerAttack != null ? this.playerAttack : getPlayerEnimeInMap();
 
-            SkillService.gI().useSkill(this, playerAttack, mobAttack, null);
+        // check điều kiện dùng skill
+        if (SkillService.gI().canUseSkillWithCooldown(this)
+                && SkillService.gI().canUseSkillWithMana(this)
+                && (mob != null || pl != null)) {
+
+            SkillService.gI().useSkill(this, pl, mob, null);
             return true;
         }
 
         return false;
+
     } catch (Exception e) {
         return false;
     }
@@ -1116,11 +1127,11 @@ public void openSkill5() {
     int rd = Util.nextInt(1, 100);
 
     if (rd <= 33) {
-        skill = SkillUtil.createSkill(Skill.LIEN_HOAN_CHUONG, 1);
+        skill = SkillUtil.createSkill(Skill.THOI_MIEN, 7);
     } else if (rd <= 66) {
-        skill = SkillUtil.createSkill(Skill.MAKANKOSAPPO, 1);
+        skill = SkillUtil.createSkill(Skill.BIEN_HINH, 6);
     } else {
-        skill = SkillUtil.createSkill(Skill.SUPER_KAME, 1);
+        skill = SkillUtil.createSkill(Skill.TU_SAT, 7);
     }
 
     if (this.playerSkill.skills.size() >= 5) {
@@ -1137,9 +1148,9 @@ public void openSkill6() {
     int rd = Util.nextInt(1, 100);
 
     if (rd <= 50) {
-        skill = SkillUtil.createSkill(Skill.HUYT_SAO, 1);
+        skill = SkillUtil.createSkill(Skill.TAI_TAO_SUC_MANH, 1);
     } else {
-        skill = SkillUtil.createSkill(Skill.QUA_CAU_KENH_KHI, 1);
+        skill = SkillUtil.createSkill(Skill.QUA_CAU_KENH_KHI, 7);
     }
 
     if (this.playerSkill.skills.size() >= 6) {
