@@ -363,7 +363,7 @@ public class Pet extends Player {
                             for (Player pl : plist) {
                                 if (pl != null) {
                                     synchronized (pl) {
-                                        if (pl != null && !pl.isMiniPet) {
+                                        if (pl != null && this.enemies2.contains(pl) && !pl.isMiniPet) {
                                             if (pl.isDie()) {
 
                                             } else {
@@ -371,7 +371,9 @@ public class Pet extends Player {
                                                 int d = Util.getDistance(this, pl);
                                                 if (d <= dis) {
                                                     dis = d;
-                                                    attackPl = true;
+                                                    if (canAttackPlayer(this, pl)) {
+                                                        attackPl = true;
+                                                    }
                                                 }
                                             }
                                         }
@@ -466,7 +468,7 @@ public class Pet extends Player {
                             for (Player pl : plist2) {
                                 if (pl != null) {
                                     synchronized (pl) {
-                                        if (pl != null && !pl.isMiniPet) {
+                                        if (pl != null && this.enemies2.contains(pl) && !pl.isMiniPet) {
                                             if (pl.isDie()) {
 
                                             } else {
@@ -475,7 +477,7 @@ public class Pet extends Player {
                                                 int d = Util.getDistance(this, pl);
                                                 if (d <= dis) {
                                                     dis = d;
-                                                    if (pl != null && !pl.isMiniPet) {
+                                                    if (SkillService.gI().canAttackPlayer(this, pl)) {
                                                         attackPl2 = true;
                                                     }
 
@@ -1051,7 +1053,7 @@ public class Pet extends Player {
         Skill skill = null;
         int tiLeBienKhi = 30;
         int tiLeDeTrung = 40;
-        int tiLeKNL = 30;
+        int tiLeKNL = 20;
 
         int rd = Util.nextInt(1, 100);
         if (rd <= tiLeBienKhi) {
@@ -1061,9 +1063,8 @@ public class Pet extends Player {
         } else if (rd <= tiLeBienKhi + tiLeDeTrung + tiLeKNL) {
             skill = SkillUtil.createSkill(Skill.KHIEN_NANG_LUONG, 1);
         }
-        this.playerSkill.skills.set(3, skill); // skill 4
+        this.playerSkill.skills.set(3, skill);
     }
-    
 
     private Skill getSkill(int indexSkill) {
         return this.playerSkill.skills.get(indexSkill - 1);

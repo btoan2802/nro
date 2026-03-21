@@ -7,10 +7,21 @@ import nro.models.skill.Skill;
 
 public class Final_Static {
 
-    public static final boolean EFF_MAP = false; //true là mở effmap - false là tắt effmap
-    public static final boolean LOCK_MAP_CHUNGSINHBINHDANG = true; //true là khóa  - false là mở
-    public static final short[] VatPhamRoiChungSinhBinhDang = {1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994}; // Vật phẩm map chúng sinh bình đẳng
-    public static final short[] ItemRoiChungSinhBinhDang = {1849, 1850, 1851, 1852, 1853, 1854, 1855, 1856, 1857}; // Item map chúng sinh bình đẳng
+    public static final boolean EFF_MAP = false; // true là mở effmap - false là tắt effmap
+    public static final boolean LOCK_MAP_CHUNGSINHBINHDANG = true; // true là khóa - false là mở
+    public static final short[] VatPhamRoiChungSinhBinhDang = { 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994 }; // Vật
+                                                                                                                        // phẩm
+                                                                                                                        // map
+                                                                                                                        // chúng
+                                                                                                                        // sinh
+                                                                                                                        // bình
+                                                                                                                        // đẳng
+    public static final short[] ItemRoiChungSinhBinhDang = { 1849, 1850, 1851, 1852, 1853, 1854, 1855, 1856, 1857 }; // Item
+                                                                                                                     // map
+                                                                                                                     // chúng
+                                                                                                                     // sinh
+                                                                                                                     // bình
+                                                                                                                     // đẳng
     public static final Set<Byte> LOAI_SKILL_CSBD = new HashSet<>(Arrays.asList(
             Skill.BIEN_HINH,
             Skill.PHAN_THAN,
@@ -36,23 +47,21 @@ public class Final_Static {
             Skill.KAIOKEN,
             Skill.QUA_CAU_KENH_KHI,
             Skill.DICH_CHUYEN_TUC_THOI,
-            Skill.THOI_MIEN
-    ));
+            Skill.THOI_MIEN));
     public static final Set<Integer> ITEM_ID_DE_TU = Set.of(
-            1596, 1593, 1590, 1587, 1584, //trái đất ( Đệ Tử )
-            1598, 1595, 1592, 1589, 1586, //xayda ( Đệ Tử )
-            1597, 1594, 1591, 1588, 1585, //namek ( Đệ Tử )
+            1596, 1593, 1590, 1587, 1584, // trái đất ( Đệ Tử )
+            1598, 1595, 1592, 1589, 1586, // xayda ( Đệ Tử )
+            1597, 1594, 1591, 1588, 1585, // namek ( Đệ Tử )
             1401, 1402, 1403, 1404, 1405 // Thánh Tôn ( Đệ Tử )
     );
     public static final Set<Integer> ITEM_ID_CAI_TRANG_SHOP_CHO_GO_SPL = Set.of(
-            2058, 2062, //Shop hồng ngọc
-            1834, 1836, 1837, 1838, //Shop xu sky
-            1998, 2035, 2036 //Shop xu sky
+            2058, 2062, // Shop hồng ngọc
+            1834, 1836, 1837, 1838, // Shop xu sky
+            1998, 2035, 2036 // Shop xu sky
     );
     public static final Set<Integer> ITEM_ID_CAI_TRANG_PHUC_LOI_CHO_GO_SPL = Set.of(
-            1844, 1845
-    );
-    public static final short[] ALLOW_ITEMS = {457, 225};
+            1844, 1845);
+    public static final short[] ALLOW_ITEMS = { 457, 225 };
 
     public static boolean isAllowTachItem(int itemId) {
         for (short id : ALLOW_ITEMS) {
@@ -65,6 +74,7 @@ public class Final_Static {
 
     private static class ________________________Chỉ_số_hợp_thể_đệ______________________ {
     }
+
     public static short hpPettype1 = 10; // đệ bát giới mập
     public static short mpPettype1 = 10;
     public static short damePettype1 = 10;
@@ -89,23 +99,23 @@ public class Final_Static {
     public static short mpPettype6 = 120;
     public static short damePettype6 = 120;
 
-    public static short hpPettype7 = 70; 
+    public static short hpPettype7 = 70;
     public static short mpPettype7 = 70;
     public static short damePettype7 = 70;
 
-    public static short hpPettype8 = 70; 
+    public static short hpPettype8 = 70;
     public static short mpPettype8 = 70;
     public static short damePettype8 = 70;
 
-    public static short hpPettype9 = 150; 
+    public static short hpPettype9 = 150;
     public static short mpPettype9 = 150;
     public static short damePettype9 = 150;
 
-    public static short hpPettype10 = 250; 
+    public static short hpPettype10 = 250;
     public static short mpPettype10 = 250;
     public static short damePettype10 = 250;
 
-    public static short hpPettype11 = 500; 
+    public static short hpPettype11 = 500;
     public static short mpPettype11 = 500;
     public static short damePettype11 = 500;
 
