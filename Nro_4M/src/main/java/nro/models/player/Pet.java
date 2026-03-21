@@ -320,13 +320,25 @@ public class Pet extends Player {
 private void updatePower() {
     if (this.playerSkill == null || this.playerSkill.skills == null) return;
 
-    int size = this.playerSkill.skills.size();
+    if (this.nPoint.power >= 150_000_000 && this.playerSkill.skills.size() < 2) {
+        openSkill2();
+    }
 
-    if (size < 2 && this.nPoint.power >= 150_000_000) openSkill2();
-    if (size < 3 && this.nPoint.power >= 1_500_000_000) openSkill3();
-    if (size < 4 && this.nPoint.power >= 20_000_000_000L) openSkill4();
-    if (size < 5 && this.nPoint.power >= 50_000_000_000L) openSkill5();
-    if (size < 6 && this.nPoint.power >= 100_000_000_000L) openSkill6();
+    if (this.nPoint.power >= 1_500_000_000 && this.playerSkill.skills.size() < 3) {
+        openSkill3();
+    }
+
+    if (this.nPoint.power >= 20_000_000_000L && this.playerSkill.skills.size() < 4) {
+        openSkill4();
+    }
+
+    if (this.nPoint.power >= 50_000_000_000L && this.playerSkill.skills.size() < 5) {
+        openSkill5();
+    }
+
+    if (this.nPoint.power >= 100_000_000_000L && this.playerSkill.skills.size() < 6) {
+        openSkill6();
+    }
 }
     @Override
     public void update() {
@@ -1111,11 +1123,13 @@ public void openSkill5() {
         skill = SkillUtil.createSkill(Skill.SUPER_KAME, 1);
     }
 
-    if (this.playerSkill.skills.size() > 4) {
-        this.playerSkill.skills.set(4, skill);
+    if (this.playerSkill.skills.size() >= 5) {
+        this.playerSkill.skills.set(4, skill); // index 4 = skill 5
     } else {
-        this.playerSkill.skills.add(skill); // 🔥 THÊM DÒNG NÀY
+        this.playerSkill.skills.add(skill);
     }
+
+    Service.getInstance().chatJustForMe(master, this, "Con đã học skill 5!");
 }
 public void openSkill6() {
     Skill skill = null;
@@ -1128,11 +1142,13 @@ public void openSkill6() {
         skill = SkillUtil.createSkill(Skill.QUA_CAU_KENH_KHI, 1);
     }
 
-    if (this.playerSkill.skills.size() > 5) {
-        this.playerSkill.skills.set(5, skill);
+    if (this.playerSkill.skills.size() >= 6) {
+        this.playerSkill.skills.set(5, skill); // index 5 = skill 6
     } else {
-        this.playerSkill.skills.add(skill); // 🔥 THÊM DÒNG NÀY
+        this.playerSkill.skills.add(skill);
     }
+
+    Service.getInstance().chatJustForMe(master, this, "Con đã học skill 6!");
 }
 
     private Skill getSkill(int indexSkill) {
