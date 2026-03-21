@@ -346,7 +346,7 @@ public class PetService {
         petData[1] = Util.nextInt(40, 105) * 20; //mp
         petData[2] = Util.nextInt(20, 45); //dame
         petData[3] = Util.nextInt(9, 50); //def
-        petData[4] = Util.nextInt(0, 2); //crit
+        petData[4] = Util.nextInt(0, 2); //critt
         return petData;
     }
 
