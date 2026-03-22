@@ -317,35 +317,9 @@ public class Pet extends Player {
             return false;
         }
     }
-private void updatePower() {
-    if (this.playerSkill == null || this.playerSkill.skills == null) return;
 
-    if (this.nPoint.power >= 150_000_000 && this.playerSkill.skills.size() < 2) {
-        openSkill2();
-    }
-
-    if (this.nPoint.power >= 1_500_000_000 && this.playerSkill.skills.size() < 3) {
-        openSkill3();
-    }
-
-    if (this.nPoint.power >= 20_000_000_000L && this.playerSkill.skills.size() < 4) {
-        openSkill4();
-    }
-
-    if (this.nPoint.power >= 50_000_000_000L && this.playerSkill.skills.size() < 5) {
-        openSkill5();
-    }
-
-    if (this.nPoint.power >= 100_000_000_000L && this.playerSkill.skills.size() < 6) {
-        openSkill6();
-    }
-}
     @Override
     public void update() {
-
-        
-
-
         try {
             super.update();
             increasePoint(); //cộng chỉ số
@@ -378,9 +352,9 @@ private void updatePower() {
                     followMaster(60);
                     break;
                 case PROTECT:
-                if (useSkill3() || useSkill4() || useSkill5() || useSkill6()) {
-                    break;
-                }
+                    if (useSkill3() || useSkill4()) {
+                        break;
+                    }
                     boolean attackPl = false;
                     if (this.zone != null) {
                         List<Player> plist = new ArrayList<>(this.zone.getHumanoids());
@@ -484,7 +458,7 @@ private void updatePower() {
                     }
                     break;
                 case ATTACK:
-                    if (useSkill3() || useSkill4() || useSkill5() || useSkill6()) {
+                    if (useSkill3() || useSkill4()) {
                         break;
                     }
                     boolean attackPl2 = false;
@@ -736,55 +710,6 @@ private void updatePower() {
             return false;
         }
     }
- private boolean useSkill5() {
-    try {
-        this.playerSkill.skillSelect = getSkill(5);
-        if (this.playerSkill.skillSelect.skillId == -1) return false;
-
-        Mob mob = this.mobAttack != null ? this.mobAttack : findMobAttack();
-        Player pl = this.playerAttack != null ? this.playerAttack : getPlayerEnimeInMap();
-
-        if (SkillService.gI().canUseSkillWithCooldown(this)
-                && SkillService.gI().canUseSkillWithMana(this)
-                && (mob != null || pl != null)) {
-
-            SkillService.gI().useSkill(this, pl, mob, null);
-            return true;
-        }
-
-        return false;
-    } catch (Exception e) {
-        return false;
-    }
-}
-private boolean useSkill6() {
-    try {
-        this.playerSkill.skillSelect = getSkill(6);
-
-        // không có skill thì bỏ
-        if (this.playerSkill.skillSelect.skillId == -1) {
-            return false;
-        }
-
-        // lấy target chuẩn (fix null)
-        Mob mob = this.mobAttack != null ? this.mobAttack : findMobAttack();
-        Player pl = this.playerAttack != null ? this.playerAttack : getPlayerEnimeInMap();
-
-        // check điều kiện dùng skill
-        if (SkillService.gI().canUseSkillWithCooldown(this)
-                && SkillService.gI().canUseSkillWithMana(this)
-                && (mob != null || pl != null)) {
-
-            SkillService.gI().useSkill(this, pl, mob, null);
-            return true;
-        }
-
-        return false;
-
-    } catch (Exception e) {
-        return false;
-    }
-}
 
     private long lastTimeIncreasePoint;
 
@@ -1067,7 +992,27 @@ private boolean useSkill6() {
         return mobAtt;
     }
 
-
+    private void updatePower() {
+        if (this.playerSkill != null) {
+            switch (this.playerSkill.getSizeSkill()) {
+                case 1:
+                    if (this.nPoint.power >= 150_000_000) {
+                        openSkill2();
+                    }
+                    break;
+                case 2:
+                    if (this.nPoint.power >= 1_500_000_000) {
+                        openSkill3();
+                    }
+                    break;
+                case 3:
+                    if (this.nPoint.power >= 20_000_000_000L) {
+                        openSkill4();
+                    }
+                    break;
+            }
+        }
+    }
 
     public void openSkill2() {
         Skill skill = null;
@@ -1120,47 +1065,6 @@ private boolean useSkill6() {
         }
         this.playerSkill.skills.set(3, skill);
     }
-
-public void openSkill5() {
-    Skill skill = null;
-
-    int rd = Util.nextInt(1, 100);
-
-    if (rd <= 33) {
-        skill = SkillUtil.createSkill(Skill.THOI_MIEN, 7);
-    } else if (rd <= 66) {
-        skill = SkillUtil.createSkill(Skill.BIEN_HINH, 6);
-    } else {
-        skill = SkillUtil.createSkill(Skill.TU_SAT, 7);
-    }
-
-    if (this.playerSkill.skills.size() >= 5) {
-        this.playerSkill.skills.set(4, skill); // index 4 = skill 5
-    } else {
-        this.playerSkill.skills.add(skill);
-    }
-
-    Service.getInstance().chatJustForMe(master, this, "Con đã học skill 5!");
-}
-public void openSkill6() {
-    Skill skill = null;
-
-    int rd = Util.nextInt(1, 100);
-
-    if (rd <= 50) {
-        skill = SkillUtil.createSkill(Skill.TAI_TAO_SUC_MANH, 1);
-    } else {
-        skill = SkillUtil.createSkill(Skill.QUA_CAU_KENH_KHI, 7);
-    }
-
-    if (this.playerSkill.skills.size() >= 6) {
-        this.playerSkill.skills.set(5, skill); // index 5 = skill 6
-    } else {
-        this.playerSkill.skills.add(skill);
-    }
-
-    Service.getInstance().chatJustForMe(master, this, "Con đã học skill 6!");
-}
 
     private Skill getSkill(int indexSkill) {
         return this.playerSkill.skills.get(indexSkill - 1);
