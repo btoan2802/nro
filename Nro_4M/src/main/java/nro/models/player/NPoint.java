@@ -27,7 +27,7 @@ import nro.models.map.ChungSinhBinhDang.ChungSinhBinhDang;
 
 public class NPoint {
 
-    public static final byte MAX_LIMIT = 11;
+    public static final byte MAX_LIMIT = 30;
 
     public Player player;
     public boolean isCrit;
