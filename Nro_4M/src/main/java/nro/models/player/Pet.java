@@ -325,7 +325,7 @@ public class Pet extends Player {
             increasePoint(); //cộng chỉ số
             updatePower(); //check mở skill...
             if (isDie()) {
-                if (System.currentTimeMillis() - lastTimeDie > 50000) {
+                if (System.currentTimeMillis() - lastTimeDie > 5000) {
                     if (this.nPoint != null) {
                         Service.getInstance().hsChar(this, nPoint.hpMax, nPoint.mpMax);
                     }
