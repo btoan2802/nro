@@ -3322,7 +3322,7 @@ public class BossData {
             ConstPlayer.TRAI_DAT,
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
-            100000,
+            100000000,
             new double[][]{{1_000_000L}},
             new short[]{1119, 1120, 1121, 38, 141}, // Head, Body, Leg, Aura, Flag
             new short[]{6, 27, 28, 29, 30, 13, 31, 32, 33, 34, 10, 19, 20, 35, 36, 37, 38}, //map join
@@ -3332,7 +3332,7 @@ public class BossData {
                 {Skill.THAI_DUONG_HA_SAN, 7, 50000},
                 {Skill.GALICK, 7, 1000}, {Skill.THOI_MIEN, 7, 100000}
             },
-            _30_GIAY, true
+            _30_GIAY
     );
 
     public static final BossData NEZUKO_BOSS = new BossData(
@@ -3341,7 +3341,7 @@ public class BossData {
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
             1000000000,
-            new double[][]{{1_500_000_000_000D}},
+            new double[][]{{1_500_000_000_000_000D}},
             new short[]{1128, 1129, 1130, 14, 141}, // Head, Body, Leg, Aura, Flag
             new short[]{5}, //map join
             new int[][]{ //skill
@@ -3350,7 +3350,7 @@ public class BossData {
                 {Skill.THAI_DUONG_HA_SAN, 7, 50000},
                 {Skill.GALICK, 7, 1000}, {Skill.THOI_MIEN, 7, 100000}
             },
-            _5_PHUT, true
+            _5_PHUT
     );
 
     public static final BossData THAN_BLUE1 = new BossData(
@@ -3359,12 +3359,14 @@ public class BossData {
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
             2000000000,
-            new double[][]{{10_000_000_000_000_000D}},
+            new double[][]{{100_000_000_000_000_000D}},
             new short[]{1586, 1595, 1596, 118, 161}, // Head, Body, Leg, Aura, Flag
             new short[]{5, 33, 42, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
                 76, 77, 78, 79, 80, 81, 82, 83, 104, 105, 106, 107, 108, 109, 110}, //map join
             new int[][]{ //skill
                 {Skill.LIEN_HOAN, 5, 300},
+                {Skill.KAMEJOKO, 7, 300},
+                {Skill.PHAN_THAN, 7, 300},
                 {Skill.ANTOMIC, 7, 1000},
                 {Skill.BIEN_HINH, 6, 300000},
                 {Skill.TAI_TAO_SUC_MANH, 1, 100},
@@ -3372,7 +3374,7 @@ public class BossData {
                 {Skill.THAI_DUONG_HA_SAN, 7, 50000},
                 {Skill.GALICK, 7, 1000}, {Skill.THOI_MIEN, 7, 100000}
             },
-            _10_PHUT
+            _5_PHUT
     );
 
     public static final BossData THAN_BLUE2 = new BossData(
@@ -3381,21 +3383,22 @@ public class BossData {
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
             2000000000,
-            new double[][]{{10_000_000_000_000_000D}},
+            new double[][]{{100_000_000_000_000_000D}},
             new short[]{1586, 1595, 1596, 118, 161}, // Head, Body, Leg, Aura, Flag
             new short[]{5, 33, 42,63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
                 76, 77, 78, 79, 80, 81, 82, 83, 84, 104, 105, 106, 107, 108, 109, 110}, //map join
             new int[][]{ //skill
                 {Skill.LIEN_HOAN, 5, 300},
                 {Skill.BIEN_KHI, 7, 50000},
-                
+                {Skill.KAMEJOKO, 7, 300},
+                {Skill.PHAN_THAN, 7, 300},
                 {Skill.BIEN_HINH, 6, 300000},
                 {Skill.TAI_TAO_SUC_MANH, 1, 100},
                 {Skill.ANTOMIC, 7, 1000},
                 {Skill.THAI_DUONG_HA_SAN, 7, 50000},
                 {Skill.GALICK, 7, 1000}, {Skill.THOI_MIEN, 7, 100000}
             },
-            _10_PHUT
+            _5_PHUT
     );
 
     public static final BossData THAN_BLUE3 = new BossData(
@@ -3404,20 +3407,23 @@ public class BossData {
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
             2000000000,
-            new double[][]{{10_000_000_000_000_000D}},
+            new double[][]{{100_000_000_000_000_000D}},
             new short[]{1586, 1595, 1596, 118, 161}, // Head, Body, Leg, Aura, Flag
             new short[]{5, 33, 42, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
                 76, 77, 78, 79, 80, 81, 82, 83, 84, 104, 105, 106, 107, 108, 109, 110}, //map join
             new int[][]{ //skill
                 {Skill.LIEN_HOAN, 5, 300},
                 {Skill.BIEN_KHI, 7, 50000},
+                {Skill.KAMEJOKO, 7, 300},
+                {Skill.PHAN_THAN, 7, 300},
+
                 {Skill.BIEN_HINH, 6, 300000},
                 {Skill.TAI_TAO_SUC_MANH, 1, 100},
                 {Skill.ANTOMIC, 7, 1000},
                 {Skill.THAI_DUONG_HA_SAN, 7, 50000},
                 {Skill.GALICK, 7, 1000}, {Skill.THOI_MIEN, 7, 100000}
             },
-            _10_PHUT
+            _5_PHUT
     );
 
     public static final BossData THAN_BLUE4 = new BossData(
@@ -3426,20 +3432,22 @@ public class BossData {
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
             2000000000,
-            new double[][]{{10_000_000_000_000_000D}},
+            new double[][]{{100_000_000_000_000_000D}},
             new short[]{1586, 1595, 1596, 118, 161}, // Head, Body, Leg, Aura, Flag
             new short[]{5, 33, 42,63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
                 76, 77, 78, 79, 80, 81, 82, 83, 84, 104, 105, 106, 107, 108, 109, 110}, //map join
             new int[][]{ //skill
                 {Skill.LIEN_HOAN, 5, 300},
                 {Skill.BIEN_KHI, 7, 50000},
+                {Skill.KAMEJOKO, 7, 300},
+                {Skill.PHAN_THAN, 7, 300},
                 {Skill.BIEN_HINH, 6, 300000},
                 {Skill.TAI_TAO_SUC_MANH, 1, 100},
                 {Skill.ANTOMIC, 7, 1000},
                 {Skill.THAI_DUONG_HA_SAN, 7, 50000},
                 {Skill.GALICK, 7, 1000}, {Skill.THOI_MIEN, 7, 100000}
             },
-            _10_PHUT
+            _5_PHUT
     );
 
     public static final BossData THAN_BLUE5 = new BossData(
@@ -3448,20 +3456,23 @@ public class BossData {
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
             2000000000,
-            new double[][]{{10_000_000_000_000_000D}},
+            new double[][]{{100_000_000_000_000_000D}},
             new short[]{1586, 1595, 1596, 118, 161}, // Head, Body, Leg, Aura, Flag
             new short[]{5, 33, 42, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
                 76, 77, 78, 79, 80, 81, 82, 83, 84, 104, 105, 106, 107, 108, 109, 110}, //map join
             new int[][]{ //skill
                 {Skill.LIEN_HOAN, 5, 300},
                 {Skill.ANTOMIC, 7, 1000},
+                {Skill.KAMEJOKO, 7, 300},
+                {Skill.PHAN_THAN, 7, 300},
+
                 {Skill.BIEN_HINH, 6, 300000},
                 {Skill.TAI_TAO_SUC_MANH, 1, 100},
                 {Skill.BIEN_KHI, 7, 50000},
                 {Skill.THAI_DUONG_HA_SAN, 7, 50000},
                 {Skill.GALICK, 7, 1000}, {Skill.THOI_MIEN, 7, 100000}
             },
-            _10_PHUT
+            _5_PHUT
     );
 
     public static final BossData THAN_RED1 = new BossData(
@@ -3470,13 +3481,15 @@ public class BossData {
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
             2000000000,
-            new double[][]{{10_000_000_000_000_000D}},
+            new double[][]{{100_000_000_000_000_000D}},
             new short[]{1640, 1643, 1644, 115, 165}, // Head, Body, Leg, Aura, Flag
             new short[]{5, 33, 42,63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
                 76, 77, 78, 79, 80, 81, 82, 83, 84, 104, 105, 106, 107, 108, 109, 110}, //map join
             new int[][]{ //skill
                 {Skill.LIEN_HOAN, 5, 300},
                 {Skill.ANTOMIC, 7, 1000},
+                {Skill.KAMEJOKO, 7, 300},
+                {Skill.PHAN_THAN, 7, 300},
                 {Skill.BIEN_HINH, 6, 300000},
                 {Skill.TAI_TAO_SUC_MANH, 1, 100},
                 {Skill.BIEN_KHI, 7, 50000},
@@ -3484,7 +3497,7 @@ public class BossData {
                 {Skill.THAI_DUONG_HA_SAN, 7, 50000},
                 {Skill.GALICK, 7, 1000}, {Skill.THOI_MIEN, 7, 100000}
             },
-            _10_PHUT
+            _5_PHUT
     );
 
     public static final BossData THAN_RED2 = new BossData(
@@ -3493,20 +3506,22 @@ public class BossData {
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
             2000000000,
-            new double[][]{{10_000_000_000_000_000D}},
+            new double[][]{{100_000_000_000_000_000D}},
             new short[]{1640, 1643, 1644, 115, 165}, // Head, Body, Leg, Aura, Flag
             new short[]{5, 33, 42,63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
                 76, 77, 78, 79, 80, 81, 82, 83, 84, 104, 105, 106, 107, 108, 109, 110}, //map join
             new int[][]{ //skill
                 {Skill.LIEN_HOAN, 5, 300},
                 {Skill.ANTOMIC, 7, 1000},
+                {Skill.KAMEJOKO, 7, 300},
+                {Skill.PHAN_THAN, 7, 300},
                 {Skill.BIEN_HINH, 6, 300000},
                 {Skill.TAI_TAO_SUC_MANH, 1, 100},
                 {Skill.BIEN_KHI, 7, 50000},
                 {Skill.THAI_DUONG_HA_SAN, 7, 50000},
                 {Skill.GALICK, 7, 1000}, {Skill.THOI_MIEN, 7, 100000}
             },
-            _10_PHUT
+            _5_PHUT
     );
 
     public static final BossData THAN_RED3 = new BossData(
@@ -3515,20 +3530,22 @@ public class BossData {
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
             2000000000,
-            new double[][]{{10_000_000_000_000_000D}},
+            new double[][]{{100_000_000_000_000_000D}},
             new short[]{1640, 1643, 1644, 115, 165}, // Head, Body, Leg, Aura, Flag
             new short[]{5, 33, 42,63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
                 76, 77, 78, 79, 80, 81, 82, 83, 84, 104, 105, 106, 107, 108, 109, 110}, //map join
             new int[][]{ //skill
                 {Skill.LIEN_HOAN, 5, 300},
                 {Skill.BIEN_KHI, 7, 50000},
+                {Skill.KAMEJOKO, 7, 300},
+                {Skill.PHAN_THAN, 7, 300},
                 {Skill.BIEN_HINH, 6, 300000},
                 {Skill.TAI_TAO_SUC_MANH, 1, 100},
                 {Skill.ANTOMIC, 7, 1000},
                 {Skill.THAI_DUONG_HA_SAN, 7, 50000},
                 {Skill.GALICK, 7, 1000}, {Skill.THOI_MIEN, 7, 100000}
             },
-            _10_PHUT
+            _5_PHUT
     );
 
     public static final BossData THAN_RED4 = new BossData(
@@ -3537,20 +3554,22 @@ public class BossData {
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
             2000000000,
-            new double[][]{{10_000_000_000_000_000D}},
+            new double[][]{{100_000_000_000_000_000D}},
             new short[]{1640, 1643, 1644, 115, 165}, // Head, Body, Leg, Aura, Flag
             new short[]{5, 33, 42,63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
                 76, 77, 78, 79, 80, 81, 82, 83, 84, 104, 105, 106, 107, 108, 109, 110}, //map join
             new int[][]{ //skill
                 {Skill.LIEN_HOAN, 5, 300},
                 {Skill.BIEN_KHI, 7, 50000},
+                {Skill.KAMEJOKO, 7, 300},
+                {Skill.PHAN_THAN, 7, 300},
                 {Skill.BIEN_HINH, 6, 300000},
                 {Skill.TAI_TAO_SUC_MANH, 1, 100},
                 {Skill.ANTOMIC, 7, 1000},
                 {Skill.THAI_DUONG_HA_SAN, 7, 50000},
                 {Skill.GALICK, 7, 1000}, {Skill.THOI_MIEN, 7, 100000}
             },
-            _10_PHUT
+            _5_PHUT
     );
 
     public static final BossData THAN_RED5 = new BossData(
@@ -3559,19 +3578,21 @@ public class BossData {
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
             2000000000,
-            new double[][]{{10_000_000_000_000_000D}},
+            new double[][]{{100_000_000_000_000_000D}},
             new short[]{1640, 1643, 1644, 115, 165}, // Head, Body, Leg, Aura, Flag
             new short[]{5, 33, 42,63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
                 76, 77, 78, 79, 80, 81, 82, 83, 84, 104, 105, 106, 107, 108, 109, 110}, //map join
             new int[][]{ //skill
                 {Skill.LIEN_HOAN, 5, 300},
                 {Skill.BIEN_HINH, 6, 300000},
+                {Skill.KAMEJOKO, 7, 300},
+                {Skill.PHAN_THAN, 7, 300},
                 {Skill.TAI_TAO_SUC_MANH, 1, 100},
                 {Skill.ANTOMIC, 7, 1000},
                 {Skill.THAI_DUONG_HA_SAN, 7, 50000},
                 {Skill.GALICK, 7, 1000}, {Skill.THOI_MIEN, 7, 100000}
             },
-            _10_PHUT
+            _5_PHUT
     );
 
     public static final BossData THAN_PINK1 = new BossData(
@@ -3580,7 +3601,7 @@ public class BossData {
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
             2000000000,
-            new double[][]{{10_000_000_000_000_000D}},
+            new double[][]{{100_000_000_000_000_000D}},
             new short[]{1598, 1580, 1581, 107, 155}, // Head, Body, Leg, Aura, Flag
             new short[]{5, 33, 42, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
                 76, 77, 78, 79, 80, 81, 82, 83, 84, 104, 105, 106, 107, 108, 109, 110}, //map join
@@ -3592,7 +3613,7 @@ public class BossData {
                 {Skill.THAI_DUONG_HA_SAN, 7, 50000},
                 {Skill.GALICK, 7, 1000}, {Skill.THOI_MIEN, 7, 100000}
             },
-            _10_PHUT
+            _5_PHUT
     );
 
     public static final BossData THAN_PINK2 = new BossData(
@@ -3601,19 +3622,21 @@ public class BossData {
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
             2000000000,
-            new double[][]{{10_000_000_000_000_000D}},
+            new double[][]{{100_000_000_000_000_000D}},
             new short[]{1598, 1580, 1581, 107, 155}, // Head, Body, Leg, Aura, Flag
             new short[]{5, 33, 42, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
                 76, 77, 78, 79, 80, 81, 82, 83, 84, 104, 105, 106, 107, 108, 109, 110}, //map join
             new int[][]{ //skill
                 {Skill.LIEN_HOAN, 5, 300},
                 {Skill.BIEN_HINH, 6, 300000},
+                {Skill.KAMEJOKO, 7, 300},
+                {Skill.PHAN_THAN, 7, 300},
                 {Skill.TAI_TAO_SUC_MANH, 1, 100},
                 {Skill.ANTOMIC, 7, 1000},
                 {Skill.THAI_DUONG_HA_SAN, 7, 50000},
                 {Skill.GALICK, 7, 1000}, {Skill.THOI_MIEN, 7, 100000}
             },
-            _10_PHUT
+            _5_PHUT
     );
 
     public static final BossData THAN_PINK3 = new BossData(
@@ -3622,19 +3645,21 @@ public class BossData {
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
             2000000000,
-            new double[][]{{10_000_000_000_000_000D}},
+            new double[][]{{100_000_000_000_000_000D}},
             new short[]{1598, 1580, 1581, 107, 155}, // Head, Body, Leg, Aura, Flag
             new short[]{5, 33, 42,63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
                 76, 77, 78, 79, 80, 81, 82, 83, 84, 104, 105, 106, 107, 108, 109, 110}, //map join
             new int[][]{ //skill
                 {Skill.LIEN_HOAN, 5, 300},
                 {Skill.BIEN_HINH, 6, 300000},
+                {Skill.KAMEJOKO, 7, 300},
+                {Skill.PHAN_THAN, 7, 300},
                 {Skill.TAI_TAO_SUC_MANH, 1, 100},
                 {Skill.ANTOMIC, 7, 1000},
                 {Skill.THAI_DUONG_HA_SAN, 7, 50000},
                 {Skill.GALICK, 7, 1000}, {Skill.THOI_MIEN, 7, 100000}
             },
-            _10_PHUT
+            _5_PHUT
     );
 
     public static final BossData THAN_PINK4 = new BossData(
@@ -3643,19 +3668,21 @@ public class BossData {
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
             2000000000,//dame
-            new double[][]{{10_000_000_000_000_000D}},
+            new double[][]{{100_000_000_000_000_000D}},
             new short[]{1598, 1580, 1581, 107, 155}, // Head, Body, Leg, Aura, Flag
             new short[]{5, 33, 42,63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
                 76, 77, 78, 79, 80, 81, 82, 83, 84, 104, 105, 106, 107, 108, 109, 110}, //map join
             new int[][]{ //skill
                 {Skill.LIEN_HOAN, 5, 300},
                 {Skill.BIEN_HINH, 6, 300000},
+                {Skill.KAMEJOKO, 7, 300},
+                {Skill.PHAN_THAN, 7, 300},
                 {Skill.TAI_TAO_SUC_MANH, 1, 100},
                 {Skill.ANTOMIC, 7, 1000},
                 {Skill.THAI_DUONG_HA_SAN, 7, 50000},
                 {Skill.GALICK, 7, 1000}, {Skill.THOI_MIEN, 7, 100000}
             },
-            _10_PHUT
+            _5_PHUT
     );
 
     public static final BossData THAN_PINK5 = new BossData(
@@ -3664,7 +3691,7 @@ public class BossData {
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
             2000000000,
-            new double[][]{{10_000_000_000_000_000D}},
+            new double[][]{{100_000_000_000_000_000D}},
             new short[]{1598, 1580, 1581, 107, 155}, // Head, Body, Leg, Aura, Flag
             new short[]{5, 33, 42, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
                 76, 77, 78, 79, 80, 81, 82, 83, 84, 104, 105, 106, 107, 108, 109, 110}, //map join
@@ -3672,12 +3699,14 @@ public class BossData {
                 {Skill.LIEN_HOAN, 5, 300},
                 {Skill.ANTOMIC, 7, 1000},
                 {Skill.BIEN_HINH, 6, 300000},
+                {Skill.KAMEJOKO, 7, 300},
+                {Skill.PHAN_THAN, 7, 300},
                 {Skill.TAI_TAO_SUC_MANH, 1, 100},
                 {Skill.BIEN_KHI, 7, 50000},
                 {Skill.THAI_DUONG_HA_SAN, 7, 50000},
                 {Skill.GALICK, 7, 1000}, {Skill.THOI_MIEN, 7, 100000}
             },
-            _10_PHUT
+            _5_PHUT
     );
     public static final BossData THIEN_SU1 = new BossData(
             "Thiên Sứ [1]", //name
@@ -3685,7 +3714,7 @@ public class BossData {
             Boss.DAME_NORMAL, //type dame
             Boss.HP_NORMAL, //type hp
             200000000, //dame
-            new double[][]{{1_000_000_000_000D}}, //hp
+            new double[][]{{100_000_000_000_000D}}, //hp
             new short[]{838, 839, 840}, //outfit
             new short[]{2, 3, 4, 8, 9, 10, 15, 16, 17, 154}, //map join
             new int[][]{ //skill
@@ -3703,7 +3732,7 @@ public class BossData {
             Boss.DAME_NORMAL, //type dame
             Boss.HP_NORMAL, //type hp
             20000000, //dame
-            new double[][]{{1_000_000_000_000D}}, //hp
+            new double[][]{{100_000_000_000_000D}}, //hp
             new short[]{838, 839, 840}, //outfit
             new short[]{2, 3, 4, 8, 9, 10, 15, 16, 17, 154}, //map join
             new int[][]{ //skill
@@ -3721,7 +3750,7 @@ public class BossData {
             Boss.DAME_NORMAL, //type dame
             Boss.HP_NORMAL, //type hp
             20000000, //dame
-            new double[][]{{1_000_000_000_000D}}, //hp
+            new double[][]{{100_000_000_000_000D}}, //hp
             new short[]{838, 839, 840}, //outfit
             new short[]{2, 3, 4, 8, 9, 10, 15, 16, 17, 154}, //map join
             new int[][]{ //skill
@@ -3738,8 +3767,8 @@ public class BossData {
             ConstPlayer.XAYDA, //gender
             Boss.DAME_NORMAL, //type dame
             Boss.HP_NORMAL, //type hp
-            20000, //dame
-            new double[][]{{100_000_000_000D}}, //hp
+            20000000, //dame
+            new double[][]{{1_000_000_000_000_000D}}, //hp
             new short[]{838, 839, 840}, //outfit
             new short[]{2, 3, 4, 8, 9, 10, 15, 16, 17, 154}, //map join
             new int[][]{ //skill

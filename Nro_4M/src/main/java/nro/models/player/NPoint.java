@@ -2856,7 +2856,7 @@ public class NPoint {
                 return dameAttack;
             case Skill.MAKANKOSAPPO:
                 percentDameSkill = skillSelect.damage;
-                double dameSkill = calPercent(this.mpMax, percentDameSkill);
+                double dameSkill = this.mpMax * percentDameSkill;
                 return dameSkill;
             case Skill.QUA_CAU_KENH_KHI:
                 long totalHP = 0;
