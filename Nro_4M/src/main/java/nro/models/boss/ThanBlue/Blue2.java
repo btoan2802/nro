@@ -70,12 +70,12 @@ public class Blue2 extends Boss {
 
     @Override
     public void rewards(Player pl) {
-        if (Util.isTrue(80, 100)) {
+        if (Util.isTrue(50, 100)) {
             ItemMap hop = new ItemMap(this.zone, 1407, 1,
                     this.location.x, this.zone.map.yPhysicInTop(this.location.x, this.location.y - 24), pl.id);
             Service.getInstance().dropItemMap(this.zone, hop);
-        } else if (Util.isTrue(85, 100)) {
-            ItemMap hop = new ItemMap(this.zone, 1769, 1,
+        } else if (Util.isTrue(10, 100)) {
+            ItemMap hop = new ItemMap(this.zone, 1459, 1,
                     this.location.x, this.zone.map.yPhysicInTop(this.location.x, this.location.y - 24), pl.id);
             Service.getInstance().dropItemMap(this.zone, hop);
         }  else if (Util.isTrue(80, 100)) {
