@@ -3359,7 +3359,7 @@ public class BossData {
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
             2000000000,
-            new double[][]{{10_000_000_000_000_000_000D}},
+            new double[][]{{1_000_000_000_000_000_000D}},
             new short[]{1586, 1595, 1596, 118, 161}, // Head, Body, Leg, Aura, Flag
             new short[]{5, 33, 42, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
                 76, 77, 78, 79, 80, 81, 82, 83, 104, 105, 106, 107, 108, 109, 110}, //map join
@@ -3371,7 +3371,7 @@ public class BossData {
                 {Skill.BIEN_HINH, 6, 300000},
                 {Skill.TAI_TAO_SUC_MANH, 1, 100},
                 {Skill.BIEN_KHI, 7, 50000},
-                {Skill.THAI_DUONG_HA_SAN, 7, 50000},
+                {Skill.THOI_MIEN, 7, 30000},
                 {Skill.GALICK, 7, 1000}, {Skill.THOI_MIEN, 7, 100000},
                 {Skill.KHIEN_NANG_LUONG, 7, 200000}
             },
@@ -3384,7 +3384,7 @@ public class BossData {
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
             2000000000,
-            new double[][]{{10_000_000_000_000_000_000D}},
+            new double[][]{{1_000_000_000_000_000_000D}},
             new short[]{1586, 1595, 1596, 118, 161}, // Head, Body, Leg, Aura, Flag
             new short[]{5, 33, 42,63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
                 76, 77, 78, 79, 80, 81, 82, 83, 84, 104, 105, 106, 107, 108, 109, 110}, //map join
@@ -3396,7 +3396,7 @@ public class BossData {
                 {Skill.BIEN_HINH, 6, 300000},
                 {Skill.TAI_TAO_SUC_MANH, 1, 100},
                 {Skill.ANTOMIC, 7, 1000},
-                {Skill.THAI_DUONG_HA_SAN, 7, 50000},
+                {Skill.THOI_MIEN, 7, 30000},
                 {Skill.GALICK, 7, 1000}, {Skill.THOI_MIEN, 7, 100000},
                 {Skill.KHIEN_NANG_LUONG, 7, 200000}
             },
@@ -3409,7 +3409,7 @@ public class BossData {
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
             2000000000,
-            new double[][]{{10_000_000_000_000_000_000D}},
+            new double[][]{{1_000_000_000_000_000_000D}},
             new short[]{1586, 1595, 1596, 118, 161}, // Head, Body, Leg, Aura, Flag
             new short[]{5, 33, 42, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
                 76, 77, 78, 79, 80, 81, 82, 83, 84, 104, 105, 106, 107, 108, 109, 110}, //map join
@@ -3422,7 +3422,7 @@ public class BossData {
                 {Skill.BIEN_HINH, 6, 300000},
                 {Skill.TAI_TAO_SUC_MANH, 1, 100},
                 {Skill.ANTOMIC, 7, 1000},
-                {Skill.THAI_DUONG_HA_SAN, 7, 50000},
+                {Skill.THOI_MIEN, 7, 30000},
                 {Skill.GALICK, 7, 1000}, {Skill.THOI_MIEN, 7, 100000},
                 {Skill.KHIEN_NANG_LUONG, 7, 200000}
             },
@@ -3435,7 +3435,7 @@ public class BossData {
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
             2000000000,
-            new double[][]{{10_000_000_000_000_000_000D}},
+            new double[][]{{1_000_000_000_000_000_000D}},
             new short[]{1586, 1595, 1596, 118, 161}, // Head, Body, Leg, Aura, Flag
             new short[]{5, 33, 42,63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
                 76, 77, 78, 79, 80, 81, 82, 83, 84, 104, 105, 106, 107, 108, 109, 110}, //map join
@@ -3447,7 +3447,7 @@ public class BossData {
                 {Skill.BIEN_HINH, 6, 300000},
                 {Skill.TAI_TAO_SUC_MANH, 1, 100},
                 {Skill.ANTOMIC, 7, 1000},
-                {Skill.THAI_DUONG_HA_SAN, 7, 50000},
+                {Skill.THOI_MIEN, 7, 30000},
                 {Skill.GALICK, 7, 1000}, {Skill.THOI_MIEN, 7, 100000},
                 {Skill.KHIEN_NANG_LUONG, 7, 200000}
             },
@@ -3460,7 +3460,7 @@ public class BossData {
             Boss.DAME_NORMAL,
             Boss.HP_NORMAL,
             2000000000,
-            new double[][]{{10_000_000_000_000_000_000D}},
+            new double[][]{{1_000_000_000_000_000_000D}},
             new short[]{1586, 1595, 1596, 118, 161}, // Head, Body, Leg, Aura, Flag
             new short[]{5, 33, 42, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75,
                 76, 77, 78, 79, 80, 81, 82, 83, 84, 104, 105, 106, 107, 108, 109, 110}, //map join
@@ -3473,7 +3473,7 @@ public class BossData {
                 {Skill.BIEN_HINH, 6, 300000},
                 {Skill.TAI_TAO_SUC_MANH, 1, 100},
                 {Skill.BIEN_KHI, 7, 50000},
-                {Skill.THAI_DUONG_HA_SAN, 7, 50000},
+                {Skill.THOI_MIEN, 7, 30000},
                 {Skill.GALICK, 7, 1000}, {Skill.THOI_MIEN, 7, 100000},
                 {Skill.KHIEN_NANG_LUONG, 7, 200000}
             },
