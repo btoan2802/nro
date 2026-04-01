@@ -74,7 +74,7 @@ public class Blue3 extends Boss {
             ItemMap hop = new ItemMap(this.zone, 1407, 1,
                     this.location.x, this.zone.map.yPhysicInTop(this.location.x, this.location.y - 24), pl.id);
             Service.getInstance().dropItemMap(this.zone, hop);
-        } else if (Util.isTrue(10, 100)) {
+        } else if (Util.isTrue(2, 100)) {
             ItemMap hop = new ItemMap(this.zone, 1459, 1,
                     this.location.x, this.zone.map.yPhysicInTop(this.location.x, this.location.y - 24), pl.id);
             Service.getInstance().dropItemMap(this.zone, hop);
