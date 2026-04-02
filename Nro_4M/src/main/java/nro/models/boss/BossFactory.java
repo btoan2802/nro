@@ -285,19 +285,19 @@ public class BossFactory {
         new Thread(() -> {
             try {
 
-//                createBoss(NGO_KHONG);
+               createBoss(NGO_KHONG);
 
-//                createBoss(WHIS);// BOS HỦY DIỆT
-//                createBoss(VADOS);// BOS HỦY DIỆT
-//                createBoss(BILL);// BOS HỦY DIỆT
-//                createBoss(CHAMPA);// BOS HỦY DIỆT
+               createBoss(WHIS);// BOS HỦY DIỆT
+               createBoss(VADOS);// BOS HỦY DIỆT
+               createBoss(BILL);// BOS HỦY DIỆT
+               createBoss(CHAMPA);// BOS HỦY DIỆT
 
-//                createBoss(SIEU_TROM);
-//                createBoss(CUMBER);
+               createBoss(SIEU_TROM);
+               createBoss(CUMBER);
 
-//                createBoss(BULMA);
-//                createBoss(CHICHITHO);
-//                createBoss(POCTHO);
+               createBoss(BULMA);
+               createBoss(CHICHITHO);
+               createBoss(POCTHO);
                 
                 createBoss(BLACKGOKU);         // BOS NHIỆM VỤ
                 createBoss(SUPERBLACKGOKU);    // BOS NHIỆM VỤ
@@ -320,105 +320,105 @@ public class BossFactory {
                 createBoss(SUPER_BLACK_ROSE);  // BOS NHIỆM VỤ
                 createBoss(ZAMAS_TOI_THUONG);  // BOS NHIỆM VỤ
                 createBoss(XEN_MAX);           // BOS NHIỆM VỤ
-//                createBoss(BONG_BANG);
-//                createBoss(SOI_BASIL);
-//               createBoss(SANTA_CLAUS);
-//               createBoss(WHIS_DETU);
-//                createBoss(RONG_DEN);
-//                createBoss(ZENO);          // 1tr tỷ
-//                createBoss(GOKU_SUPER);
-//                createBoss(ITACHI);        // 1tr tỷ
-//                createBoss(ZAMAS_ZOMBIE);
-//                createBoss(LUFFY_GEAR5);
-//                createBoss(KAIDO);
-//                createBoss(LUFFY_THAN_NIKA);
-//                createBoss(NGUYET_THAN);
-//                createBoss(MIHAWK);
-//                createBoss(NHAT_THAN);
+               createBoss(BONG_BANG);
+               createBoss(SOI_BASIL);
+              createBoss(SANTA_CLAUS);
+              createBoss(WHIS_DETU);
+               createBoss(RONG_DEN);
+               createBoss(ZENO);          // 1tr tỷ
+               createBoss(GOKU_SUPER);
+               createBoss(ITACHI);        // 1tr tỷ
+               createBoss(ZAMAS_ZOMBIE);
+               createBoss(LUFFY_GEAR5);
+               createBoss(KAIDO);
+               createBoss(LUFFY_THAN_NIKA);
+               createBoss(NGUYET_THAN);
+               createBoss(MIHAWK);
+               createBoss(NHAT_THAN);
 
-//                createBoss(NHAT_VI);      //2 tỷ tỷ
-//                createBoss(NHI_VI);       //2 tỷ tỷ
-//                createBoss(TAM_VI);       //2 tỷ tỷ
-//                createBoss(TU_VI);        //2 tỷ tỷ
-//                createBoss(NGU_VI);       //2 tỷ tỷ
+               createBoss(NHAT_VI);      //2 tỷ tỷ
+               createBoss(NHI_VI);       //2 tỷ tỷ
+               createBoss(TAM_VI);       //2 tỷ tỷ
+               createBoss(TU_VI);        //2 tỷ tỷ
+               createBoss(NGU_VI);       //2 tỷ tỷ
 
-//                createBoss(LUC_VI);       // 100K TY
-//                createBoss(THAT_VI);      // 100K TY
-//                createBoss(BAT_VI);       // 100K TY
-//                createBoss(CUU_VI);       // 100K TY
-//                createBoss(THAP_VI);      // 100K TY
+               createBoss(LUC_VI);       // 100K TY
+               createBoss(THAT_VI);      // 100K TY
+               createBoss(BAT_VI);       // 100K TY
+               createBoss(CUU_VI);       // 100K TY
+               createBoss(THAP_VI);      // 100K TY
 
-//                createBoss(GOKU_SKY_1);     // 10K TY
-//                createBoss(GOKU_SKY_2);     // 10K TY
-//                createBoss(GOKU_SKY_3);     // 10K TY
-//                createBoss(GOKU_SKY_4);     // 10K TY
-//                createBoss(GOKU_SKY_5);     // 10K TY
+               createBoss(GOKU_SKY_1);     // 10K TY
+               createBoss(GOKU_SKY_2);     // 10K TY
+               createBoss(GOKU_SKY_3);     // 10K TY
+               createBoss(GOKU_SKY_4);     // 10K TY
+               createBoss(GOKU_SKY_5);     // 10K TY
 
-//                createBoss(XEKO);        // BOSS SỰ KIỆN +10 ĐIỂM
-//                createBoss(CHAIEN);      // BOSS SỰ KIỆN +10 ĐIỂM
-//                createBoss(NOBITA);      // BOSS SỰ KIỆN +10 ĐIỂM
-//                createBoss(XUKA);        // BOSS SỰ KIỆN +10 ĐIỂM
-//                createBoss(DOREMON);     // BOSS SỰ KIỆN +10 ĐIỂM
+               createBoss(XEKO);        // BOSS SỰ KIỆN +10 ĐIỂM
+               createBoss(CHAIEN);      // BOSS SỰ KIỆN +10 ĐIỂM
+               createBoss(NOBITA);      // BOSS SỰ KIỆN +10 ĐIỂM
+               createBoss(XUKA);        // BOSS SỰ KIỆN +10 ĐIỂM
+               createBoss(DOREMON);     // BOSS SỰ KIỆN +10 ĐIỂM
 
-//                createBoss(GOKU_THAN_TAI);    // BOSS CÀY CHAY
-//                createBoss(PICOLO_THAN_TAI);  // BOSS CÀY CHAY
-//                createBoss(VEGETA_THAN_TAI);  // BOSS CÀY CHAY
+               createBoss(GOKU_THAN_TAI);    // BOSS CÀY CHAY
+               createBoss(PICOLO_THAN_TAI);  // BOSS CÀY CHAY
+               createBoss(VEGETA_THAN_TAI);  // BOSS CÀY CHAY
 
-//                createBoss(SON_TINH);
-//                createBoss(THUY_TINH);
-//                createBoss(VUA_HUNG);
+               createBoss(SON_TINH);
+               createBoss(THUY_TINH);
+               createBoss(VUA_HUNG);
 
                 createBoss(RONG_1SAO); // 1_000_000_000_000D
                 createBoss(RONG_2SAO); // 2_000_000_000_000D
                 createBoss(RONG_3SAO); // 3_000_000_000_000D
-//                createBoss(RONG_4SAO); 
-//                createBoss(RONG_5SAO); 
-//                createBoss(RONG_6SAO); 
-//                createBoss(RONG_7SAO); 
+               createBoss(RONG_4SAO); 
+               createBoss(RONG_5SAO); 
+               createBoss(RONG_6SAO); 
+               createBoss(RONG_7SAO); 
 
-//                createBoss(ADMIN_1);
-//                createBoss(ADMIN_2);
+               createBoss(ADMIN_1);
+               createBoss(ADMIN_2);
 
                 createBoss(HUY_DIET1);  // 30_000_000_000D
                 createBoss(HUY_DIET2);
                 createBoss(HUY_DIET3);
-//                createBoss(HUY_DIET4);
-//                createBoss(HUY_DIET5);
+               createBoss(HUY_DIET4);
+               createBoss(HUY_DIET5);
 
                 createBoss(THAN_LINH1);  // 10_000_000_000D
                 createBoss(THAN_LINH2);
-//                createBoss(THAN_LINH3);
+               createBoss(THAN_LINH3);
 
                 createBoss(THIEN_SU1);  // 100_000_000_000D
-//                createBoss(THIEN_SU2);
-//                createBoss(THIEN_SU3);
-//                createBoss(THIEN_SU4);
-//                createBoss(THIEN_SU5);
+               createBoss(THIEN_SU2);
+               createBoss(THIEN_SU3);
+               createBoss(THIEN_SU4);
+               createBoss(THIEN_SU5);
 
-//                createBoss(THAN_MAU);
+               createBoss(THAN_MAU);
 
-//                createBoss(BI_KIEP_1);
-//                createBoss(BI_KIEP_2);
-//                createBoss(BI_KIEP_3);
-//                createBoss(BI_KIEP_4);
+               createBoss(BI_KIEP_1);
+               createBoss(BI_KIEP_2);
+               createBoss(BI_KIEP_3);
+               createBoss(BI_KIEP_4);
 
                 createBoss(THAN_BLUE1);
-//                createBoss(THAN_BLUE2);
-//                createBoss(THAN_BLUE3);
-//                createBoss(THAN_BLUE4);
-//                createBoss(THAN_BLUE5);
+               createBoss(THAN_BLUE2);
+               createBoss(THAN_BLUE3);
+               createBoss(THAN_BLUE4);
+               createBoss(THAN_BLUE5);
                 
                 createBoss(THAN_RED1);
-//                createBoss(THAN_RED2);
-//                createBoss(THAN_RED3);
-//                createBoss(THAN_RED4);
-//                createBoss(THAN_RED5);
+               createBoss(THAN_RED2);
+               createBoss(THAN_RED3);
+               createBoss(THAN_RED4);
+               createBoss(THAN_RED5);
                 
                 createBoss(THAN_PINK1);
-//                createBoss(THAN_PINK2);
-//                createBoss(THAN_PINK3);
-//                createBoss(THAN_PINK4);
-//                createBoss(THAN_PINK5);
+               createBoss(THAN_PINK2);
+               createBoss(THAN_PINK3);
+               createBoss(THAN_PINK4);
+               createBoss(THAN_PINK5);
                 createBoss(TU_TIEN_1);
                 createBoss(TU_TIEN_2);
                 createBoss(TU_TIEN_3);
@@ -457,10 +457,10 @@ public class BossFactory {
                     }
                 }
 
-//                createBoss(FRIEREN);
-//                createBoss(MAJIN_ANDROID_21);
-//                createBoss(KING_KONG_SANH_DIEU);
-//                createBoss(NEZUKO_BOSS);
+               createBoss(FRIEREN);
+               createBoss(MAJIN_ANDROID_21);
+               createBoss(KING_KONG_SANH_DIEU);
+               createBoss(NEZUKO_BOSS);
 
             } catch (Exception e) {
                 logger.error("Err initboss", e);

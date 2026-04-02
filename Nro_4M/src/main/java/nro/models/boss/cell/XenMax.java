@@ -110,7 +110,7 @@ public class XenMax extends FutureBoss {
         }
         //nhiệm vụ siêu thần thủy
         if (TaskService.gI().getIdTask(pl) == ConstTask.TASK_31_3) {
-            if (Util.isTrue(10, 100)) {
+            if (Util.isTrue(50, 100)) {
                 ItemMap sieuThanThuy = new ItemMap(this.zone, 725, 1,
                         this.location.x, this.zone.map.yPhysicInTop(this.location.x, this.location.y - 24), pl.id);
                 Service.getInstance().dropItemMap(this.zone, sieuThanThuy);

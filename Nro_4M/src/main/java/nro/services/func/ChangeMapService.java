@@ -118,29 +118,29 @@ public class ChangeMapService {
                     Service.getInstance().sendThongBaoOK(pl, "Khu vực đã đầy");
                     return;
                 }
-                if (zoneJoin != null) {
-                    if (!pl.isBoss) {
-                        int currentHour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY);
-                        // Danh sách các giờ không cho vào
-                        List<Integer> blockedHours = Arrays.asList(1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23);
-                        if (blockedHours.contains(currentHour)) {
-                            if (!zoneJoin.getBosses().isEmpty()) {
-                                List<Player> listBoss = zoneJoin.getBosses();
-                                for (Player plBoss : listBoss) {
-                                    if (plBoss != null) {
-                                        if (pl.playerTask.taskMain.id != 21
-                                                && (plBoss.id == BossFactory.FIDE_DAI_CA_1
-                                                || plBoss.id == BossFactory.FIDE_DAI_CA_2
-                                                || plBoss.id == BossFactory.FIDE_DAI_CA_3)) {
-                                            Service.getInstance().sendThongBaoOK(pl, "changeZone Trong thời gian hỗ trợ\nKhông thể vào khu vực này");
-                                            return;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+                // if (zoneJoin != null) {
+                //     if (!pl.isBoss) {
+                //         int currentHour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY);
+                //         // Danh sách các giờ không cho vào
+                //         List<Integer> blockedHours = Arrays.asList(1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23);
+                //         if (blockedHours.contains(currentHour)) {
+                //             if (!zoneJoin.getBosses().isEmpty()) {
+                //                 List<Player> listBoss = zoneJoin.getBosses();
+                //                 for (Player plBoss : listBoss) {
+                //                     if (plBoss != null) {
+                //                         if (pl.playerTask.taskMain.id != 21
+                //                                 && (plBoss.id == BossFactory.FIDE_DAI_CA_1
+                //                                 || plBoss.id == BossFactory.FIDE_DAI_CA_2
+                //                                 || plBoss.id == BossFactory.FIDE_DAI_CA_3)) {
+                //                             Service.getInstance().sendThongBaoOK(pl, "changeZone Trong thời gian hỗ trợ\nKhông thể vào khu vực này");
+                //                             return;
+                //                         }
+                //                     }
+                //                 }
+                //             }
+                //         }
+                //     }
+                // }
                 if (zoneJoin != null) {
                     changeMap(pl, zoneJoin, -1, -1, pl.location.x, pl.location.y, NON_SPACE_SHIP);
                 }
@@ -291,29 +291,29 @@ public class ChangeMapService {
             Service.getInstance().changeFlag(pl, pl.iDMark.getTranhNgoc());
             TranhNgocService.getInstance().sendCreatePhoBan(pl);
         }
-        if (zoneJoin != null) {
-            if (!pl.isBoss) {
-                int currentHour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY);
-                // Danh sách các giờ không cho vào
-                List<Integer> blockedHours = Arrays.asList(1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23);
-                if (blockedHours.contains(currentHour)) {
-                    if (!zoneJoin.getBosses().isEmpty()) {
-                        List<Player> listBoss = zoneJoin.getBosses();
-                        for (Player plBoss : listBoss) {
-                            if (plBoss != null) {
-                                if (pl.playerTask.taskMain.id != 21
-                                        && (plBoss.id == BossFactory.FIDE_DAI_CA_1
-                                        || plBoss.id == BossFactory.FIDE_DAI_CA_2
-                                        || plBoss.id == BossFactory.FIDE_DAI_CA_3)) {
-                                    Service.getInstance().sendThongBaoOK(pl, "changeZone Trong thời gian hỗ trợ\nKhông thể vào khu vực này");
-                                    return;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        // if (zoneJoin != null) {
+        //     if (!pl.isBoss) {
+        //         int currentHour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY);
+        //         // Danh sách các giờ không cho vào
+        //         List<Integer> blockedHours = Arrays.asList(1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23);
+        //         if (blockedHours.contains(currentHour)) {
+        //             if (!zoneJoin.getBosses().isEmpty()) {
+        //                 List<Player> listBoss = zoneJoin.getBosses();
+        //                 for (Player plBoss : listBoss) {
+        //                     if (plBoss != null) {
+        //                         if (pl.playerTask.taskMain.id != 21
+        //                                 && (plBoss.id == BossFactory.FIDE_DAI_CA_1
+        //                                 || plBoss.id == BossFactory.FIDE_DAI_CA_2
+        //                                 || plBoss.id == BossFactory.FIDE_DAI_CA_3)) {
+        //                             Service.getInstance().sendThongBaoOK(pl, "changeZone Trong thời gian hỗ trợ\nKhông thể vào khu vực này");
+        //                             return;
+        //                         }
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
         if (zoneJoin != null) {
             boolean currMapIsCold = MapService.gI().isMapCold(pl.zone.map);
             boolean nextMapIsCold = MapService.gI().isMapCold(zoneJoin.map);
@@ -952,29 +952,29 @@ public class ChangeMapService {
                     break;
             }
         }
-        if (zoneJoin != null) {
-            if (!player.isBoss) {
-                int currentHour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY);
-                // Danh sách các giờ không cho vào
-                List<Integer> blockedHours = Arrays.asList(1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23);
-                if (blockedHours.contains(currentHour)) {
-                    if (!zoneJoin.getBosses().isEmpty()) {
-                        List<Player> listBoss = zoneJoin.getBosses();
-                        for (Player plBoss : listBoss) {
-                            if (plBoss != null) {
-                                if (player.playerTask.taskMain.id != 21
-                                        && (plBoss.id == BossFactory.FIDE_DAI_CA_1
-                                        || plBoss.id == BossFactory.FIDE_DAI_CA_2
-                                        || plBoss.id == BossFactory.FIDE_DAI_CA_3)) {
-                                    Service.getInstance().sendThongBaoOK(player, "changeZone Trong thời gian hỗ trợ\nKhông thể vào khu vực này");
-                                    break;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        // if (zoneJoin != null) {
+        //     if (!player.isBoss) {
+        //         int currentHour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY);
+        //         // Danh sách các giờ không cho vào
+        //         List<Integer> blockedHours = Arrays.asList(1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23);
+        //         if (blockedHours.contains(currentHour)) {
+        //             if (!zoneJoin.getBosses().isEmpty()) {
+        //                 List<Player> listBoss = zoneJoin.getBosses();
+        //                 for (Player plBoss : listBoss) {
+        //                     if (plBoss != null) {
+        //                         if (player.playerTask.taskMain.id != 21
+        //                                 && (plBoss.id == BossFactory.FIDE_DAI_CA_1
+        //                                 || plBoss.id == BossFactory.FIDE_DAI_CA_2
+        //                                 || plBoss.id == BossFactory.FIDE_DAI_CA_3)) {
+        //                             Service.getInstance().sendThongBaoOK(player, "changeZone Trong thời gian hỗ trợ\nKhông thể vào khu vực này");
+        //                             break;
+        //                         }
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
         return zoneJoin;
     }
 
