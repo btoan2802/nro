@@ -2772,10 +2772,10 @@ public class BossData {
             ConstPlayer.TRAI_DAT, //gender
             Boss.DAME_NORMAL, //type dame
             Boss.HP_NORMAL, //type hp
-            100000, //dame
+            2000000000, //dame
             new double[][]{{1_000_000_000_000_000_000_000_000D}},
             new short[]{1436, 1437, 1438}, //outfit
-            new short[]{139, 140}, //map join
+            new short[]{5}, //map join
             new int[][]{ //skill
                 {Skill.LIEN_HOAN, 5, 300},
                 {Skill.ANTOMIC, 7, 1000},
@@ -2783,7 +2783,7 @@ public class BossData {
                 {Skill.TAI_TAO_NANG_LUONG, 7, 15000},
                 {Skill.GALICK, 7, 1000}, {Skill.BIEN_KHI, 7, 1200000}
             },
-            _30_PHUT
+            _1_PHUT
     );
 
     public static final BossData ADMIN_2 = new BossData(
@@ -2791,10 +2791,10 @@ public class BossData {
             ConstPlayer.TRAI_DAT, //gender
             Boss.DAME_NORMAL, //type dame
             Boss.HP_NORMAL, //type hp
-            100000, //dame
+            2000000000, //dame
             new double[][]{{1_000_000_000_000_000_000_000_000D}},
             new short[]{1436, 1437, 1438}, //outfit
-            new short[]{139, 140}, //map join
+            new short[]{5}, //map join
             new int[][]{ //skill
                 {Skill.LIEN_HOAN, 5, 300},
                 {Skill.ANTOMIC, 7, 1000},
@@ -2802,7 +2802,7 @@ public class BossData {
                 {Skill.TAI_TAO_NANG_LUONG, 7, 15000},
                 {Skill.GALICK, 7, 1000}, {Skill.BIEN_KHI, 7, 1200000}
             },
-            _30_PHUT
+            _1_PHUT
     );
 
     public static final BossData VI_THU1 = new BossData(
