@@ -72,7 +72,7 @@ public abstract class Boss extends Player implements BossInterface {
     protected short[] outfit;
     protected byte typeDame;
     protected byte typeHp;
-    protected int percentDame;
+    protected double percentDame;
     protected short[] mapJoin;
 
     protected byte indexTalkBefore;
