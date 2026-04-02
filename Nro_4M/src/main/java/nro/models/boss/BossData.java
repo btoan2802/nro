@@ -2589,8 +2589,8 @@ public class BossData {
             ConstPlayer.XAYDA, //gender
             Boss.DAME_NORMAL, //type dame
             Boss.HP_NORMAL, //type hp
-            1000, //dame
-            new double[][]{{1_000L}}, //hp
+            1000000000, //dame
+            new double[][]{{1_000_000_000_000_000_000D}}, //hp
             new short[]{1976, 1977, 1978}, //outfit
             new short[]{0}, //map join
             new int[][]{ //skill
@@ -2607,8 +2607,8 @@ public class BossData {
             ConstPlayer.XAYDA, //gender
             Boss.DAME_NORMAL, //type dame
             Boss.HP_NORMAL, //type hp
-            1000, //dame
-            new double[][]{{1_000L}}, //hp
+            1000000000, //dame
+            new double[][]{{1_000_000_000_000_000_000D}}, //hp
             new short[]{1796, 1797, 1798}, //outfit
             new short[]{0}, //map join
             new int[][]{ //skill
@@ -2625,8 +2625,8 @@ public class BossData {
             ConstPlayer.XAYDA, //gender
             Boss.DAME_NORMAL, //type dame
             Boss.HP_NORMAL, //type hp
-            1000, //dame
-            new double[][]{{1_000L}}, //hp
+            1000000000, //dame
+            new double[][]{{1_000_000_000_000_000_000D}}, //hp
             new short[]{1793, 1794, 1795}, //outfit
             new short[]{0}, //map join
             new int[][]{ //skill
@@ -2700,8 +2700,8 @@ public class BossData {
             ConstPlayer.TRAI_DAT, //gender
             Boss.DAME_NORMAL, //type dame
             Boss.HP_NORMAL, //type hp
-            4000, //dame
-            new double[][]{{1_000_000L}},
+            400000000, //dame
+            new double[][]{{1_000_000_000_000_000_000D}},
             new short[]{1973, 1974, 1975}, //outfit
             new short[]{217}, //map join
             new int[][]{ //skill
@@ -2718,8 +2718,8 @@ public class BossData {
             ConstPlayer.TRAI_DAT, //gender
             Boss.DAME_NORMAL, //type dame
             Boss.HP_NORMAL, //type hp
-            4000, //dame
-            new double[][]{{1_000_000L}},
+            400000000, //dame
+            new double[][]{{1_000_000_000_000_000_000D}},
             new short[]{1952, 1953, 1954}, //outfit
             new short[]{217}, //map join
             new int[][]{ //skill
@@ -2754,8 +2754,8 @@ public class BossData {
             ConstPlayer.TRAI_DAT, //gender
             Boss.DAME_NORMAL, //type dame
             Boss.HP_NORMAL, //type hp
-            4000, //dame
-            new double[][]{{1_000_000L}},
+            400000000, //dame
+            new double[][]{{1_000_000_000_000_000_000D}},
             new short[]{1790, 1791, 1792}, //outfit
             new short[]{217}, //map join
             new int[][]{ //skill
@@ -2810,8 +2810,8 @@ public class BossData {
             ConstPlayer.XAYDA, //gender
             Boss.DAME_NORMAL, //type dame
             Boss.HP_NORMAL, //type hp
-            20000, //dame
-            new double[][]{{1000}}, //hp
+            2000000000, //dame
+            new double[][]{{1_000_000_000_000_000_000D}}, //hp
             new short[]{1625, 1626, 1627}, //outfit
             new short[]{126}, //map join
             new int[][]{ //skill
@@ -2827,8 +2827,8 @@ public class BossData {
             ConstPlayer.XAYDA, //gender
             Boss.DAME_NORMAL, //type dame
             Boss.HP_NORMAL, //type hp
-            20000, //dame
-            new double[][]{{1000}}, //hp
+            2000000000, //dame
+            new double[][]{{1_000_000_000_000_000_000D}}, //hp
             new short[]{1628, 1629, 1630}, //outfit
             new short[]{126}, //map join
             new int[][]{ //skill
@@ -2844,8 +2844,8 @@ public class BossData {
             ConstPlayer.XAYDA, //gender
             Boss.DAME_NORMAL, //type dame
             Boss.HP_NORMAL, //type hp
-            20000, //dame
-            new double[][]{{1000}}, //hp
+            2000000000, //dame
+            new double[][]{{1_000_000_000_000_000_000D}}, //hp
             new short[]{1673, 1674, 1675}, //outfit
             new short[]{126}, //map join
             new int[][]{ //skill
@@ -2861,8 +2861,8 @@ public class BossData {
             ConstPlayer.XAYDA, //gender
             Boss.DAME_NORMAL, //type dame
             Boss.HP_NORMAL, //type hp
-            20000, //dame
-            new double[][]{{1000}}, //hp
+            2000000000, //dame
+            new double[][]{{1_000_000_000_000_000_000D}}, //hp
             new short[]{1676, 1677, 1678}, //outfit
             new short[]{126}, //map join
             new int[][]{ //skill
@@ -2878,8 +2878,8 @@ public class BossData {
             ConstPlayer.XAYDA, //gender
             Boss.DAME_NORMAL, //type dame
             Boss.HP_NORMAL, //type hp
-            20000, //dame
-            new double[][]{{1000}}, //hp
+            2000000000, //dame
+            new double[][]{{1_000_000_000_000_000_000D}}, //hp
             new short[]{1679, 1680, 1681}, //outfit
             new short[]{126}, //map join
             new int[][]{ //skill
@@ -2895,8 +2895,8 @@ public class BossData {
             ConstPlayer.XAYDA, //gender
             Boss.DAME_NORMAL, //type dame
             Boss.HP_NORMAL, //type hp
-            20000, //dame
-            new double[][]{{1000}}, //hp
+            2000000000, //dame
+            new double[][]{{1_000_000_000_000_000_000D}}, //hp
             new short[]{1682, 1683, 1684}, //outfit
             new short[]{126}, //map join
             new int[][]{ //skill
@@ -2912,8 +2912,8 @@ public class BossData {
             ConstPlayer.XAYDA, //gender
             Boss.DAME_NORMAL, //type dame
             Boss.HP_NORMAL, //type hp
-            20000, //dame
-            new double[][]{{1000}}, //hp
+            2000000000, //dame
+            new double[][]{{1_000_000_000_000_000_000D}}, //hp
             new short[]{1685, 1686, 1687}, //outfit
             new short[]{126}, //map join
             new int[][]{ //skill
@@ -2929,8 +2929,8 @@ public class BossData {
             ConstPlayer.XAYDA, //gender
             Boss.DAME_NORMAL, //type dame
             Boss.HP_NORMAL, //type hp
-            20000, //dame
-            new double[][]{{1000}}, //hp
+            2000000000, //dame
+            new double[][]{{1_000_000_000_000_000_000D}}, //hp
             new short[]{1688, 1689, 1690}, //outfit
             new short[]{126}, //map join
             new int[][]{ //skill
@@ -2946,8 +2946,8 @@ public class BossData {
             ConstPlayer.XAYDA, //gender
             Boss.DAME_NORMAL, //type dame
             Boss.HP_NORMAL, //type hp
-            20000, //dame
-            new double[][]{{1000}}, //hp
+            2000000000, //dame
+            new double[][]{{1_000_000_000_000_000_000D}}, //hp
             new short[]{1544, 1545, 1546}, //outfit
             new short[]{126}, //map join
             new int[][]{ //skill
@@ -2963,8 +2963,8 @@ public class BossData {
             ConstPlayer.XAYDA, //gender
             Boss.DAME_NORMAL, //type dame
             Boss.HP_NORMAL, //type hp
-            20000, //dame
-            new double[][]{{1000}}, //hp
+            2000000000, //dame
+            new double[][]{{1_000_000_000_000_000_000D}}, //hp
             new short[]{1622, 1623, 1624}, //outfit
             new short[]{126}, //map join
             new int[][]{ //skill
