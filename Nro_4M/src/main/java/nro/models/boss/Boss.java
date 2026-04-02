@@ -145,7 +145,7 @@ public abstract class Boss extends Player implements BossInterface {
         this.typeHp = data.typeHp;
         this.nPoint.power = 1;
         this.nPoint.mpg = 752002;
-        int dame = data.dame;
+        double dame = data.dame;
         double hp = 1;
         if (data.secondsRest != -1) {
             this.secondTimeRestToNextTimeAppear = data.secondsRest;
