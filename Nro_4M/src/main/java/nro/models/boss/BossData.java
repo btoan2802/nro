@@ -2445,11 +2445,15 @@ public class BossData {
             new short[]{1741, 1742, 1743, 89, 132}, // Head, Body, Leg, Aura, Flag
             new short[]{6, 27, 28, 29, 30, 13, 31, 32, 33, 34, 10, 19, 20, 35, 36, 37, 38}, //map join
             new int[][]{ //skill
-                {Skill.DRAGON, 1, 1000}, {Skill.DRAGON, 2, 2000}, {Skill.DRAGON, 3, 3000}, {Skill.DRAGON, 7, 7000},
-                {Skill.ANTOMIC, 1, 1000}, {Skill.ANTOMIC, 2, 1200}, {Skill.ANTOMIC, 4, 1500}, {Skill.ANTOMIC, 7, 1700},
-                {Skill.MASENKO, 1, 1000}, {Skill.MASENKO, 2, 1200}, {Skill.MASENKO, 4, 1500}, {Skill.MASENKO, 7, 1700},
-                {Skill.THAI_DUONG_HA_SAN, 1, 30000},
-                {Skill.GALICK, 1, 1000}
+                {Skill.KAIOKEN, 7, 7000},
+                {Skill.ANTOMIC, 7, 1700},
+                {Skill.KAMEJOKO, 7, 1700},
+                {Skill.THAI_DUONG_HA_SAN, 7, 30000},
+                {Skill.GALICK, 7, 1000},
+                {Skill.THOI_MIEN, 7, 50000},
+                {Skill.DE_TRUNG, 7, 50000},
+                {Skill.HUYT_SAO, 7, 50000},
+                {Skill.TAI_TAO_NANG_LUONG, 7, 30000}
             },
             _30_PHUT
     );
@@ -2464,11 +2468,15 @@ public class BossData {
             new short[]{1741, 1742, 1743, 89, 132}, // Head, Body, Leg, Aura, Flag
             new short[]{6, 27, 28, 29, 30, 13, 31, 32, 33, 34, 10, 19, 20, 35, 36, 37, 38}, //map join
             new int[][]{ //skill
-                {Skill.DRAGON, 1, 1000}, {Skill.DRAGON, 2, 2000}, {Skill.DRAGON, 3, 3000}, {Skill.DRAGON, 7, 7000},
-                {Skill.ANTOMIC, 1, 1000}, {Skill.ANTOMIC, 2, 1200}, {Skill.ANTOMIC, 4, 1500}, {Skill.ANTOMIC, 7, 1700},
-                {Skill.MASENKO, 1, 1000}, {Skill.MASENKO, 2, 1200}, {Skill.MASENKO, 4, 1500}, {Skill.MASENKO, 7, 1700},
-                {Skill.THAI_DUONG_HA_SAN, 1, 30000},
-                {Skill.GALICK, 1, 1000}
+                {Skill.KAIOKEN, 7, 7000},
+                {Skill.ANTOMIC, 7, 1700},
+                {Skill.KAMEJOKO, 7, 1700},
+                {Skill.THAI_DUONG_HA_SAN, 7, 30000},
+                {Skill.GALICK, 7, 1000},
+                {Skill.THOI_MIEN, 7, 50000},
+                {Skill.DE_TRUNG, 7, 50000},
+                {Skill.HUYT_SAO, 7, 50000},
+                {Skill.TAI_TAO_NANG_LUONG, 7, 30000}
             },
             _30_PHUT
     );
@@ -2483,11 +2491,15 @@ public class BossData {
             new short[]{1741, 1742, 1743, 89, 132}, // Head, Body, Leg, Aura, Flag
             new short[]{6, 27, 28, 29, 30, 13, 31, 32, 33, 34, 10, 19, 20, 35, 36, 37, 38}, //map join
             new int[][]{ //skill
-                {Skill.DRAGON, 1, 1000}, {Skill.DRAGON, 2, 2000}, {Skill.DRAGON, 3, 3000}, {Skill.DRAGON, 7, 7000},
-                {Skill.ANTOMIC, 1, 1000}, {Skill.ANTOMIC, 2, 1200}, {Skill.ANTOMIC, 4, 1500}, {Skill.ANTOMIC, 7, 1700},
-                {Skill.MASENKO, 1, 1000}, {Skill.MASENKO, 2, 1200}, {Skill.MASENKO, 4, 1500}, {Skill.MASENKO, 7, 1700},
-                {Skill.THAI_DUONG_HA_SAN, 1, 30000},
-                {Skill.GALICK, 1, 1000}
+                {Skill.KAIOKEN, 7, 7000},
+                {Skill.ANTOMIC, 7, 1700},
+                {Skill.KAMEJOKO, 7, 1700},
+                {Skill.THAI_DUONG_HA_SAN, 7, 30000},
+                {Skill.GALICK, 7, 1000},
+                {Skill.THOI_MIEN, 7, 50000},
+                {Skill.DE_TRUNG, 7, 50000},
+                {Skill.HUYT_SAO, 7, 50000},
+                {Skill.TAI_TAO_NANG_LUONG, 7, 30000}
             },
             _30_PHUT
     );
@@ -2502,11 +2514,15 @@ public class BossData {
             new short[]{1741, 1742, 1743, 89, 132}, // Head, Body, Leg, Aura, Flag
             new short[]{6, 27, 28, 29, 30, 13, 31, 32, 33, 34, 10, 19, 20, 35, 36, 37, 38}, //map join
             new int[][]{ //skill
-                {Skill.DRAGON, 1, 1000}, {Skill.DRAGON, 2, 2000}, {Skill.DRAGON, 3, 3000}, {Skill.DRAGON, 7, 7000},
-                {Skill.ANTOMIC, 1, 1000}, {Skill.ANTOMIC, 2, 1200}, {Skill.ANTOMIC, 4, 1500}, {Skill.ANTOMIC, 7, 1700},
-                {Skill.MASENKO, 1, 1000}, {Skill.MASENKO, 2, 1200}, {Skill.MASENKO, 4, 1500}, {Skill.MASENKO, 7, 1700},
-                {Skill.THAI_DUONG_HA_SAN, 1, 30000},
-                {Skill.GALICK, 1, 1000}
+                {Skill.KAIOKEN, 7, 7000},
+                {Skill.ANTOMIC, 7, 1700},
+                {Skill.KAMEJOKO, 7, 1700},
+                {Skill.THAI_DUONG_HA_SAN, 7, 30000},
+                {Skill.GALICK, 7, 1000},
+                {Skill.THOI_MIEN, 7, 50000},
+                {Skill.DE_TRUNG, 7, 50000},
+                {Skill.HUYT_SAO, 7, 50000},
+                {Skill.TAI_TAO_NANG_LUONG, 7, 30000}
             },
             _30_PHUT
     );
@@ -2521,11 +2537,15 @@ public class BossData {
             new short[]{1741, 1742, 1743, 89, 132}, // Head, Body, Leg, Aura, Flag
             new short[]{6, 27, 28, 29, 30, 13, 31, 32, 33, 34, 10, 19, 20, 35, 36, 37, 38}, //map join
             new int[][]{ //skill
-                {Skill.DRAGON, 1, 1000}, {Skill.DRAGON, 2, 2000}, {Skill.DRAGON, 3, 3000}, {Skill.DRAGON, 7, 7000},
-                {Skill.ANTOMIC, 1, 1000}, {Skill.ANTOMIC, 2, 1200}, {Skill.ANTOMIC, 4, 1500}, {Skill.ANTOMIC, 7, 1700},
-                {Skill.MASENKO, 1, 1000}, {Skill.MASENKO, 2, 1200}, {Skill.MASENKO, 4, 1500}, {Skill.MASENKO, 7, 1700},
-                {Skill.THAI_DUONG_HA_SAN, 1, 30000},
-                {Skill.GALICK, 1, 1000}
+                {Skill.KAIOKEN, 7, 7000},
+                {Skill.ANTOMIC, 7, 1700},
+                {Skill.KAMEJOKO, 7, 1700},
+                {Skill.THAI_DUONG_HA_SAN, 7, 30000},
+                {Skill.GALICK, 7, 1000},
+                {Skill.THOI_MIEN, 7, 50000},
+                {Skill.DE_TRUNG, 7, 50000},
+                {Skill.HUYT_SAO, 7, 50000},
+                {Skill.TAI_TAO_NANG_LUONG, 7, 30000}
             },
             _30_PHUT
     );
@@ -2768,12 +2788,12 @@ public class BossData {
     );
 
     public static final BossData ADMIN_1 = new BossData(
-            "Admin ( VIP1 )", //name
+            "Nguyễn Bảo Toàn", //name
             ConstPlayer.TRAI_DAT, //gender
             Boss.DAME_NORMAL, //type dame
             Boss.HP_NORMAL, //type hp
-            2000000000000D, //dame
-            new double[][]{{10_000_000_000_000_000_000D}},
+            200000000000000D, //dame
+            new double[][]{{500_000_000_000_000_000_000D}},
             new short[]{1436, 1437, 1438}, //outfit
             new short[]{5}, //map join
             new int[][]{ //skill
@@ -2781,18 +2801,19 @@ public class BossData {
                 {Skill.ANTOMIC, 7, 1000},
                 {Skill.THAI_DUONG_HA_SAN, 7, 50000},
                 {Skill.TAI_TAO_NANG_LUONG, 7, 15000},
-                {Skill.GALICK, 7, 1000}, {Skill.BIEN_KHI, 7, 1200000}
+                {Skill.GALICK, 7, 1000}, {Skill.BIEN_KHI, 7, 120000}
+
             },
             _1_PHUT
     );
 
     public static final BossData ADMIN_2 = new BossData(
-            "Admin ( VIP2 )", //name
+            "Nguyễn Bảo Toàn", //name
             ConstPlayer.TRAI_DAT, //gender
             Boss.DAME_NORMAL, //type dame
             Boss.HP_NORMAL, //type hp
-            2000000000000D, //dame
-            new double[][]{{10_000_000_000_000_000_000D}},
+            200000000000000D, //dame
+            new double[][]{{500_000_000_000_000_000_000D}},
             new short[]{1436, 1437, 1438}, //outfit
             new short[]{5}, //map join
             new int[][]{ //skill
@@ -2800,7 +2821,7 @@ public class BossData {
                 {Skill.ANTOMIC, 7, 1000},
                 {Skill.THAI_DUONG_HA_SAN, 7, 50000},
                 {Skill.TAI_TAO_NANG_LUONG, 7, 15000},
-                {Skill.GALICK, 7, 1000}, {Skill.BIEN_KHI, 7, 1200000}
+                {Skill.GALICK, 7, 1000}, {Skill.BIEN_KHI, 7, 120000}
             },
             _1_PHUT
     );
@@ -3277,7 +3298,7 @@ public class BossData {
                 {Skill.LIEN_HOAN, 5, 300},
                 {Skill.ANTOMIC, 7, 1000},
                 {Skill.THAI_DUONG_HA_SAN, 7, 50000},
-                {Skill.GALICK, 7, 1000}, {Skill.THOI_MIEN, 7, 100000}
+                {Skill.GALICK, 7, 1000}
             },
             _30_GIAY
     );
@@ -3295,7 +3316,7 @@ public class BossData {
                 {Skill.LIEN_HOAN, 5, 300},
                 {Skill.ANTOMIC, 7, 1000},
                 {Skill.THAI_DUONG_HA_SAN, 7, 50000},
-                {Skill.GALICK, 7, 1000}, {Skill.THOI_MIEN, 7, 100000}
+                {Skill.GALICK, 7, 1000}
             },
             _30_GIAY, true
     );
@@ -3313,7 +3334,7 @@ public class BossData {
                 {Skill.LIEN_HOAN, 5, 300},
                 {Skill.ANTOMIC, 7, 1000},
                 {Skill.THAI_DUONG_HA_SAN, 7, 50000},
-                {Skill.GALICK, 7, 1000}, {Skill.THOI_MIEN, 7, 100000}
+                {Skill.GALICK, 7, 1000}
             },
             _30_GIAY, true
     );
@@ -3330,7 +3351,7 @@ public class BossData {
                 {Skill.LIEN_HOAN, 5, 300},
                 {Skill.ANTOMIC, 7, 1000},
                 {Skill.THAI_DUONG_HA_SAN, 7, 50000},
-                {Skill.GALICK, 7, 1000}, {Skill.THOI_MIEN, 7, 100000}
+                {Skill.GALICK, 7, 1000}
             },
             _30_GIAY
     );
@@ -3348,7 +3369,7 @@ public class BossData {
                 {Skill.LIEN_HOAN, 5, 300},
                 {Skill.ANTOMIC, 7, 1000},
                 {Skill.THAI_DUONG_HA_SAN, 7, 50000},
-                {Skill.GALICK, 7, 1000}, {Skill.THOI_MIEN, 7, 100000}
+                {Skill.GALICK, 7, 1000}
             },
             _5_PHUT
     );

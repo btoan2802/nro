@@ -4115,7 +4115,7 @@ public class CombineServiceNew {
         if (InventoryService.gI().getCountEmptyBag(player) > 0) {
             Item Trangbi = player.combineNew.itemsCombine.stream().filter(Item::isTrangBi).findFirst().get();
             CombineServiceNew.gI().sendEffectOpenItem(player, Trangbi.template.iconID, Trangbi.template.iconID);
-            if (Util.isTrue(10, 100)) {
+            if (Util.isTrue(80, 100)) {
                 int[] optionIds = {214, 215, 216};
                 boolean hasTargetOption = Trangbi.itemOptions.stream()
                         .anyMatch(option -> Arrays.stream(optionIds).anyMatch(id -> id == option.optionTemplate.id));
@@ -4141,12 +4141,12 @@ public class CombineServiceNew {
                 } else {
                     Trangbi.itemOptions.add(insertIndex, new ItemOption(randomOptionId, 1));
                 }
-                InventoryService.gI().subQuantityItemsBag(player, dahoangkim, 100);
-                InventoryService.gI().subQuantityItemsBag(player, mTS, 10000);
+                InventoryService.gI().subQuantityItemsBag(player, dahoangkim, 30);
+                InventoryService.gI().subQuantityItemsBag(player, mTS, 999);
                 Service.getInstance().sendThongBao(player, "Chúc mừng! Bạn đã nâng cấp thành công!");
             } else {
-                InventoryService.gI().subQuantityItemsBag(player, dahoangkim, 100);
-                InventoryService.gI().subQuantityItemsBag(player, mTS, 10000);
+                InventoryService.gI().subQuantityItemsBag(player, dahoangkim, 30);
+                InventoryService.gI().subQuantityItemsBag(player, mTS, 999);
                 Service.getInstance().sendThongBao(player, "Rất tiếc! Nâng cấp thất bại!");
             }
 
@@ -5582,8 +5582,8 @@ public class CombineServiceNew {
             case NANG_CAP_SKH_BILL:
                 return "Vào hành trang\n"
                         + "Cần 1 món đồ trang bị\n"
-                        + "Và 10k mảnh Thiên Sứ\n"
-                        + "Phí Nâng Cấp: 100 Đá Vũ Trụ\n"
+                        + "Và 999 mảnh Thiên Sứ\n"
+                        + "Phí Nâng Cấp: 20 Đá Vũ Trụ\n"
                         + "Lưu ý\n: Random 3 chỉ số khác nhau\n"
                         + "50% Tốc Độ Đánh\n"
                         + "50% Tốc Độ Chưởng\n"
