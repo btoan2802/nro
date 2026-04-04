@@ -553,6 +553,9 @@ public class PlayerDAO {
                             dataItem.put("temp_id", item.template.id);
                             dataItem.put("quantity", item.quantity);
                             dataItem.put("create_time", item.createTime);
+                            if (item.splHistory != null && !item.splHistory.isEmpty()) {
+                                dataItem.put("spl_history", item.splHistory);
+                            }
                             for (ItemOption io : item.itemOptions) {
                                 JSONArray option = new JSONArray();
                                 option.add(io.optionTemplate.id);
@@ -600,7 +603,9 @@ public class PlayerDAO {
                             dataItem.put("temp_id", item.template.id);
                             dataItem.put("quantity", item.quantity);
                             dataItem.put("create_time", item.createTime);
-
+                            if (item.splHistory != null && !item.splHistory.isEmpty()) {
+                                dataItem.put("spl_history", item.splHistory);
+                            }
                             for (ItemOption io : item.itemOptions) {
                                 JSONArray option = new JSONArray();
                                 option.add(io.optionTemplate.id);
@@ -648,6 +653,9 @@ public class PlayerDAO {
                             dataItem.put("temp_id", item.template.id);
                             dataItem.put("quantity", item.quantity);
                             dataItem.put("create_time", item.createTime);
+                            if (item.splHistory != null && !item.splHistory.isEmpty()) {
+                                dataItem.put("spl_history", item.splHistory);
+                            }
 
                             for (ItemOption io : item.itemOptions) {
                                 JSONArray option = new JSONArray();
@@ -675,6 +683,9 @@ public class PlayerDAO {
                             dataItem.put("temp_id", item.template.id);
                             dataItem.put("quantity", item.quantity);
                             dataItem.put("create_time", item.createTime);
+                            if (item.splHistory != null && !item.splHistory.isEmpty()) {
+                                dataItem.put("spl_history", item.splHistory);
+                            }
                             JSONArray options = new JSONArray();
                             for (ItemOption io : item.itemOptions) {
                                 JSONArray option = new JSONArray();
@@ -702,6 +713,9 @@ public class PlayerDAO {
                             dataItem.put("temp_id", item.template.id);
                             dataItem.put("quantity", item.quantity);
                             dataItem.put("create_time", item.createTime);
+                            if (item.splHistory != null && !item.splHistory.isEmpty()) {
+                                dataItem.put("spl_history", item.splHistory);
+                            }
                             JSONArray options = new JSONArray();
                             for (ItemOption io : item.itemOptions) {
                                 JSONArray option = new JSONArray();
@@ -1099,6 +1113,9 @@ public class PlayerDAO {
                                 dataItem.put("temp_id", item.template.id);
                                 dataItem.put("quantity", item.quantity);
                                 dataItem.put("create_time", item.createTime);
+                                if (item.splHistory != null && !item.splHistory.isEmpty()) {
+                                dataItem.put("spl_history", item.splHistory);
+                            }
                                 JSONArray options = new JSONArray();
                                 for (ItemOption io : item.itemOptions) {
                                     JSONArray option = new JSONArray();
@@ -1161,6 +1178,9 @@ public class PlayerDAO {
                             dataItem.put("temp_id", item.template.id);
                             dataItem.put("quantity", item.quantity);
                             dataItem.put("create_time", item.createTime);
+                            if (item.splHistory != null && !item.splHistory.isEmpty()) {
+                                dataItem.put("spl_history", item.splHistory);
+                            }
                             for (ItemOption io : item.itemOptions) {
                                 JSONArray option = new JSONArray();
                                 option.add(io.optionTemplate.id);
@@ -1215,6 +1235,9 @@ public class PlayerDAO {
                             dataItem.put("temp_id", item.template.id);
                             dataItem.put("quantity", item.quantity);
                             dataItem.put("create_time", item.createTime);
+                            if (item.splHistory != null && !item.splHistory.isEmpty()) {
+                                dataItem.put("spl_history", item.splHistory);
+                            }
                             for (ItemOption io : item.itemOptions) {
                                 JSONArray option = new JSONArray();
                                 option.add(io.optionTemplate.id);
@@ -1242,6 +1265,9 @@ public class PlayerDAO {
                             dataItem.put("temp_id", item.template.id);
                             dataItem.put("quantity", item.quantity);
                             dataItem.put("create_time", item.createTime);
+                            if (item.splHistory != null && !item.splHistory.isEmpty()) {
+                                dataItem.put("spl_history", item.splHistory);
+                            }
                             for (ItemOption io : item.itemOptions) {
                                 JSONArray option = new JSONArray();
                                 option.add(io.optionTemplate.id);
@@ -1269,6 +1295,9 @@ public class PlayerDAO {
                             dataItem.put("temp_id", item.template.id);
                             dataItem.put("quantity", item.quantity);
                             dataItem.put("create_time", item.createTime);
+                            if (item.splHistory != null && !item.splHistory.isEmpty()) {
+                                dataItem.put("spl_history", item.splHistory);
+                            }
                             for (ItemOption io : item.itemOptions) {
                                 JSONArray option = new JSONArray();
                                 option.add(io.optionTemplate.id);
@@ -1749,6 +1778,9 @@ public class PlayerDAO {
                         dataItem.put("temp_id", item.template.id);
                         dataItem.put("quantity", item.quantity);
                         dataItem.put("create_time", item.createTime);
+                        if (item.splHistory != null && !item.splHistory.isEmpty()) {
+                                dataItem.put("spl_history", item.splHistory);
+                            }
                         JSONArray options = new JSONArray();
                         for (ItemOption io : item.itemOptions) {
                             JSONArray option = new JSONArray();

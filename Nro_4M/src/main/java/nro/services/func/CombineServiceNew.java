@@ -113,6 +113,60 @@ public class CombineServiceNew {
         return i;
     }
 
+
+
+    private void appendSplHistory(Item item, int optionId, int param) {
+        String entry = optionId + ":" + param;
+        if (item.splHistory == null || item.splHistory.isEmpty()) {
+            item.splHistory = entry;
+        } else {
+            item.splHistory += ";" + entry;
+        }
+    }
+
+    private boolean hasSplHistory(Item item) {
+        return item != null && item.splHistory != null && !item.splHistory.isEmpty();
+    }
+
+    private Item rollbackSplHistory(Item itemGoc) {
+        if (!hasSplHistory(itemGoc)) {
+            return null;
+        }
+
+        Item itemMoi = ItemService.gI().copyItem(itemGoc);
+
+        String[] entries = itemMoi.splHistory.split(";");
+        for (String entry : entries) {
+            if (entry == null || entry.isEmpty() || !entry.contains(":")) {
+                continue;
+            }
+
+            String[] parts = entry.split(":");
+            if (parts.length != 2) {
+                continue;
+            }
+
+            int optionId = Integer.parseInt(parts[0]);
+            int param = Integer.parseInt(parts[1]);
+
+            Iterator<ItemOption> iterator = itemMoi.itemOptions.iterator();
+            while (iterator.hasNext()) {
+                ItemOption io = iterator.next();
+                if (io.optionTemplate.id == optionId) {
+                    io.param -= param;
+                    if (io.param <= 0) {
+                        iterator.remove();
+                    }
+                    break;
+                }
+            }
+        }
+
+        itemMoi.itemOptions.removeIf(io -> io.optionTemplate.id == 102);
+        itemMoi.splHistory = null;
+        return itemMoi;
+    }
+    
     /**
      * Mở tab đập đồ
      *
@@ -276,6 +330,12 @@ public class CombineServiceNew {
                     if (!hasSaoPhaLeDaEp(item)) {
                         this.baHatMit.createOtherMenu(player, ConstNpc.IGNORE_MENU,
                                 "Trang bị này chưa có sao pha lê đã khảm", "Đóng");
+                        return;
+                    }
+
+                    if (!hasSplHistory(item)) {
+                        this.baHatMit.createOtherMenu(player, ConstNpc.IGNORE_MENU,
+                                "Trang bị cũ này chưa có dữ liệu lịch sử pha lê để tách chính xác", "Đóng");
                         return;
                     }
                     Item itemMoi = createItemAfterRemoveSpl(item);
@@ -2419,6 +2479,7 @@ public class CombineServiceNew {
                     } else {
                         trangBi.itemOptions.add(new ItemOption(optionId, param));
                     }
+                    appendSplHistory(trangBi, optionId, param);
                     if (optionStar != null) {
                         optionStar.param++;
                     } else {
@@ -2517,15 +2578,32 @@ public class CombineServiceNew {
             return;
         }
 
-        Item itemMoi = createItemAfterRemoveSpl(itemCu);
+        if (!hasSplHistory(itemCu)) {
+            Service.getInstance().sendThongBao(player, "Trang bị cũ này chưa có dữ liệu lịch sử pha lê để tách chính xác");
+            return;
+        }
+
+        Item itemMoi = rollbackSplHistory(itemCu);
         if (itemMoi == null) {
-            Service.getInstance().sendThongBao(player, "Vật phẩm này chưa được hỗ trợ tách sao pha lê");
+            Service.getInstance().sendThongBao(player, "Không thể hoàn tác lịch sử pha lê");
             return;
         }
 
         byte indexBag = InventoryService.gI().getIndexBag(player, itemCu);
+        int indexBody = -1;
+
         if (indexBag < 0) {
-            Service.getInstance().sendThongBao(player, "Không tìm thấy vật phẩm trong hành trang");
+            for (int i = 0; i < player.inventory.itemsBody.size(); i++) {
+                Item it = player.inventory.itemsBody.get(i);
+                if (it == itemCu) {
+                    indexBody = i;
+                    break;
+                }
+            }
+        }
+
+        if (indexBag < 0 && indexBody < 0) {
+            Service.getInstance().sendThongBao(player, "Không tìm thấy vật phẩm trong hành trang hoặc trang bị");
             return;
         }
 
@@ -2533,12 +2611,20 @@ public class CombineServiceNew {
         Item itemSau = ItemService.gI().copyItem(itemMoi);
 
         player.inventory.gold -= COST_GO_SAO_PHA_LE_TRANG_BI;
-        player.inventory.itemsBag.set(indexBag, itemMoi);
+
+        if (indexBag >= 0) {
+            player.inventory.itemsBag.set(indexBag, itemMoi);
+            InventoryService.gI().sendItemBags(player);
+        } else {
+            player.inventory.itemsBody.set(indexBody, itemMoi);
+            InventoryService.gI().sendItemBody(player);
+            Service.getInstance().point(player);
+        }
+
         player.combineNew.itemsCombine.clear();
 
         sendEffectSuccessCombine(player);
         FileUtils.writeGoSaoTrangBiLog(player, itemTruoc, itemSau);
-        InventoryService.gI().sendItemBags(player);
         Service.getInstance().sendMoney(player);
         Service.getInstance().sendThongBao(player, "Đã tách bỏ tinh thể đã khảm khỏi " + itemTruoc.template.name);
         reOpenItemCombine(player);

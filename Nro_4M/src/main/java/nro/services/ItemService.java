@@ -54,6 +54,7 @@ public class ItemService {
         Item it = new Item();
         it.itemOptions = new ArrayList<>();
         it.template = item.template;
+        it.splHistory = item.splHistory;
         it.info = item.info;
         it.content = item.content;
         it.quantity = item.quantity;

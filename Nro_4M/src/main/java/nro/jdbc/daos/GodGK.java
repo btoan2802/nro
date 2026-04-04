@@ -316,6 +316,10 @@ public class GodGK {
                                         Integer.parseInt(String.valueOf(opt.get(1)))));
                             }
                             item.createTime = Long.parseLong(String.valueOf(dataObject.get("create_time")));
+                            Object splHistory = dataObject.get("spl_history");
+                                if (splHistory != null) {
+                                    item.splHistory = String.valueOf(splHistory);
+                                }
                             if (ItemService.gI().isOutOfDateTime(item)) {
                                 item = ItemService.gI().createItemNull();
                             }
@@ -342,6 +346,10 @@ public class GodGK {
                                         Integer.parseInt(String.valueOf(opt.get(1)))));
                             }
                             item.createTime = Long.parseLong(String.valueOf(dataObject.get("create_time")));
+                            Object splHistory = dataObject.get("spl_history");
+                                if (splHistory != null) {
+                                    item.splHistory = String.valueOf(splHistory);
+                                }
                             if (ItemService.gI().isOutOfDateTime(item)) {
                                 item = ItemService.gI().createItemNull();
                             }
@@ -368,6 +376,10 @@ public class GodGK {
                                         Integer.parseInt(String.valueOf(opt.get(1)))));
                             }
                             item.createTime = Long.parseLong(String.valueOf(dataObject.get("create_time")));
+                            Object splHistory = dataObject.get("spl_history");
+                                if (splHistory != null) {
+                                    item.splHistory = String.valueOf(splHistory);
+                                }
                             if (ItemService.gI().isOutOfDateTime(item)) {
                                 item = ItemService.gI().createItemNull();
                             }
@@ -687,6 +699,10 @@ public class GodGK {
                                         Integer.parseInt(String.valueOf(opt.get(1)))));
                             }
                             item.createTime = Long.parseLong(String.valueOf(dataObject.get("create_time")));
+                            Object splHistory = dataObject.get("spl_history");
+                                if (splHistory != null) {
+                                    item.splHistory = String.valueOf(splHistory);
+                                }
                             if (ItemService.gI().isOutOfDateTime(item)) {
                                 item = ItemService.gI().createItemNull();
                             }
@@ -714,6 +730,10 @@ public class GodGK {
                                         Integer.parseInt(String.valueOf(opt.get(1)))));
                             }
                             item.createTime = Long.parseLong(String.valueOf(dataObject.get("create_time")));
+                            Object splHistory = dataObject.get("spl_history");
+                                if (splHistory != null) {
+                                    item.splHistory = String.valueOf(splHistory);
+                                }
                             if (ItemService.gI().isOutOfDateTime(item)) {
                                 item = ItemService.gI().createItemNull();
                             }
@@ -741,6 +761,10 @@ public class GodGK {
                                         Integer.parseInt(String.valueOf(opt.get(1)))));
                             }
                             item.createTime = Long.parseLong(String.valueOf(dataObject.get("create_time")));
+                            Object splHistory = dataObject.get("spl_history");
+                                if (splHistory != null) {
+                                    item.splHistory = String.valueOf(splHistory);
+                                }
                             if (ItemService.gI().isOutOfDateTime(item)) {
                                 item = ItemService.gI().createItemNull();
                             }
@@ -768,6 +792,10 @@ public class GodGK {
                                         Integer.parseInt(String.valueOf(opt.get(1)))));
                             }
                             item.createTime = Long.parseLong(String.valueOf(dataObject.get("create_time")));
+                            Object splHistory = dataObject.get("spl_history");
+                                if (splHistory != null) {
+                                    item.splHistory = String.valueOf(splHistory);
+                                }
                             if (ItemService.gI().isOutOfDateTime(item)) {
                                 item = ItemService.gI().createItemNull();
                             }
@@ -795,6 +823,10 @@ public class GodGK {
                                         Integer.parseInt(String.valueOf(opt.get(1)))));
                             }
                             item.createTime = Long.parseLong(String.valueOf(dataObject.get("create_time")));
+                            Object splHistory = dataObject.get("spl_history");
+                                if (splHistory != null) {
+                                    item.splHistory = String.valueOf(splHistory);
+                                }
                             if (ItemService.gI().isOutOfDateTime(item)) {
                                 item = ItemService.gI().createItemNull();
                             }
@@ -1139,6 +1171,10 @@ public class GodGK {
                                             Integer.parseInt(String.valueOf(opt.get(1)))));
                                 }
                                 item.createTime = Long.parseLong(String.valueOf(dataObject.get("create_time")));
+                                Object splHistory = dataObject.get("spl_history");
+                                if (splHistory != null) {
+                                    item.splHistory = String.valueOf(splHistory);
+                                }
                                 if (ItemService.gI().isOutOfDateTime(item)) {
                                     item = ItemService.gI().createItemNull();
                                 }
@@ -1350,6 +1386,10 @@ public class GodGK {
                                         Integer.parseInt(String.valueOf(opt.get(1)))));
                             }
                             item.createTime = Long.parseLong(String.valueOf(dataObject.get("create_time")));
+                            Object splHistory = dataObject.get("spl_history");
+                                if (splHistory != null) {
+                                    item.splHistory = String.valueOf(splHistory);
+                                }
                             if (ItemService.gI().isOutOfDateTime(item)) {
                                 item = ItemService.gI().createItemNull();
                             }
@@ -1376,6 +1416,10 @@ public class GodGK {
                                         Integer.parseInt(String.valueOf(opt.get(1)))));
                             }
                             item.createTime = Long.parseLong(String.valueOf(dataObject.get("create_time")));
+                            Object splHistory = dataObject.get("spl_history");
+                                if (splHistory != null) {
+                                    item.splHistory = String.valueOf(splHistory);
+                                }
                             if (ItemService.gI().isOutOfDateTime(item)) {
                                 item = ItemService.gI().createItemNull();
                             }
@@ -1402,6 +1446,10 @@ public class GodGK {
                                         Integer.parseInt(String.valueOf(opt.get(1)))));
                             }
                             item.createTime = Long.parseLong(String.valueOf(dataObject.get("create_time")));
+                            Object splHistory = dataObject.get("spl_history");
+                                if (splHistory != null) {
+                                    item.splHistory = String.valueOf(splHistory);
+                                }
                             if (ItemService.gI().isOutOfDateTime(item)) {
                                 item = ItemService.gI().createItemNull();
                             }
@@ -1997,6 +2045,10 @@ public class GodGK {
                                             Integer.parseInt(String.valueOf(opt.get(1)))));
                                 }
                                 item.createTime = Long.parseLong(String.valueOf(dataObject.get("create_time")));
+                                Object splHistory = dataObject.get("spl_history");
+                                if (splHistory != null) {
+                                    item.splHistory = String.valueOf(splHistory);
+                                }
                                 if (ItemService.gI().isOutOfDateTime(item)) {
                                     item = ItemService.gI().createItemNull();
                                 }

@@ -23,6 +23,8 @@ public class Item {
 
     public long createTime;
 
+    public String splHistory;
+
     public boolean isNotNullItem() {
         return this.template != null;
     }
@@ -31,11 +33,13 @@ public class Item {
         this.template = ItemService.gI().getTemplate(itemId);
         this.itemOptions = new ArrayList<>();
         this.createTime = System.currentTimeMillis();
+        this.splHistory = null;
     }
 
     public Item() {
         this.itemOptions = new ArrayList<>();
         this.createTime = System.currentTimeMillis();
+        this.splHistory = null;
     }
 
     public String getInfo() {
