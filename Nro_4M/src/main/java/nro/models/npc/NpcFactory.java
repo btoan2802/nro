@@ -3772,6 +3772,7 @@ if (!player.getSession().actived && player.playerTask.taskMain.id >= 21) {
                                                 case CombineServiceNew.EP_SAO_TRANG_BI:
                                                 case CombineServiceNew.AN_TRANG_BI:
                                                 case CombineServiceNew.PHA_LE_HOA_TRANG_BI:
+                                                case CombineServiceNew.GO_SAO_PHA_LE_TRANG_BI:
                                                 case CombineServiceNew.PHAP_SU_HOA:
                                                 case CombineServiceNew.TAY_PHAP_SU:
                                                 case CombineServiceNew.NANG_CAP_CHAN_MENH:
