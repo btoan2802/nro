@@ -35,8 +35,8 @@ public class POCTHO extends Boss {
 
     @Override
     public void rewards(Player pl) {
-        if (Util.isTrue(5, 100)) {
-            ItemMap hop = new ItemMap(this.zone, 1459, 1,
+        if (Util.isTrue(1, 100)) {
+            ItemMap hop = new ItemMap(this.zone, 1547, 1,
                     this.location.x, this.zone.map.yPhysicInTop(this.location.x, this.location.y - 24), pl.id);
             Service.getInstance().dropItemMap(this.zone, hop);
         } else if (Util.isTrue(15, 100)) {
