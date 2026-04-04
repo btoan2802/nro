@@ -76,7 +76,7 @@ public class Nezuko extends Boss {
                 }
                 default -> {
                     if (plAtt.isPl()) {
-                        int damevaohpboss = 12; // 12% máu hiện tại
+                        int damevaohpboss = 15; // 15% máu hiện tại
                         double maxPercentDamage = this.nPoint.hp * damevaohpboss / 100.0;
                         if (damage > maxPercentDamage) {
                             damage = maxPercentDamage;

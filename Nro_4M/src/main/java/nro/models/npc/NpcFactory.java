@@ -3631,7 +3631,8 @@ if (!player.getSession().actived && player.playerTask.taskMain.id >= 21) {
                                                 "Cửa hàng\nBùa",
                                                 "Nâng cấp\nVật phẩm",
                                                 "Nhập\nNgọc Rồng",
-                                                "Sách tuyệt kỹ"
+                                                "Sách tuyệt kỹ",
+                                                "Bông tai\nVô Cực"
                                         );
                                     case 121 ->
                                         this.createOtherMenu(player, ConstNpc.BASE_MENU,
@@ -4126,6 +4127,7 @@ if (!player.getSession().actived && player.playerTask.taskMain.id >= 21) {
                                             switch (player.combineNew.typeCombine) {
                                                 case CombineServiceNew.NANG_CAP_VAT_PHAM:
                                                 case CombineServiceNew.NANG_CAP_BONG_TAI:
+                                                case CombineServiceNew.NANG_CAP_BONG_TAI_VIP:
                                                 case CombineServiceNew.LAM_PHEP_NHAP_DA:
                                                 case CombineServiceNew.NHAP_NGOC_RONG:
                                                 case CombineServiceNew.PHAN_RA_DO_THAN_LINH:

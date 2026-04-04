@@ -448,6 +448,19 @@ public class UseItem {
                     case 1550: //bông tai cấp 5
                         UseItem.gI().usePorata5(pl);
                         break;
+
+                    case 1999: // bông tai cấp 6
+                        UseItem.gI().usePorata5(pl);
+                        break;
+                    case 1944: // bông tai cấp 7
+                        UseItem.gI().usePorata5(pl);
+                        break;
+                    case 1945: // bông tai cấp 8
+                        UseItem.gI().usePorata5(pl);
+                        break;
+                    case 1946: // bông tai cấp 9
+                        UseItem.gI().usePorata5(pl);
+                        break;
                     case 193: //gói 10 viên capsule
                         InventoryService.gI().subQuantityItemsBag(pl, item, 1);
                     case 194: //capsule đặc biệt

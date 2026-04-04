@@ -778,7 +778,7 @@ public class CombineServiceNew {
 
                         player.combineNew.goldCombine = 500000000;
                         player.combineNew.gemCombine = 1000;
-                        player.combineNew.ratioCombine = 50;
+                        player.combineNew.ratioCombine = 90;
 
                         String npcSay = "Bông tai Porata cấp 2" + "\n|2|";
                         for (ItemOption io : bongTai.itemOptions) {
@@ -797,7 +797,7 @@ public class CombineServiceNew {
 
                         player.combineNew.goldCombine = 1000000;
                         player.combineNew.gemCombine = 5000;
-                        player.combineNew.ratioCombine = 20;
+                        player.combineNew.ratioCombine = 80;
 
                         String npcSay = "Bông tai Porata cấp 3" + "\n|2|";
                         for (ItemOption io : bongTai.itemOptions) {
@@ -816,7 +816,7 @@ public class CombineServiceNew {
 
                         player.combineNew.goldCombine = 1000000;
                         player.combineNew.gemCombine = 15000;
-                        player.combineNew.ratioCombine = 10;
+                        player.combineNew.ratioCombine = 70;
 
                         String npcSay = "Bông tai Porata cấp 4" + "\n|2|";
                         for (ItemOption io : bongTai.itemOptions) {
@@ -835,7 +835,7 @@ public class CombineServiceNew {
 
                         player.combineNew.goldCombine = 2000000000;
                         player.combineNew.gemCombine = 50000;
-                        player.combineNew.ratioCombine = 10;
+                        player.combineNew.ratioCombine = 60;
 
                         String npcSay = "Bông tai Porata cấp 5" + "\n|2|";
                         for (ItemOption io : bongTai.itemOptions) {
@@ -852,11 +852,11 @@ public class CombineServiceNew {
                         }
                     } else {
                         this.baHatMit.createOtherMenu(player, ConstNpc.IGNORE_MENU,
-                                "Cần 1 Bông tai Porata cấp 1, 2, 3, 4 và Mảnh vỡ bông tai", "Đóng");
+                                "Tab này chỉ nâng Bông tai Porata từ cấp 1 đến cấp 5\nMuốn nâng cấp 5 hãy dùng mục Bông tai Vô Cực", "Đóng");
                     }
                 } else {
                     this.baHatMit.createOtherMenu(player, ConstNpc.IGNORE_MENU,
-                            "Cần 1 Bông tai Porata cấp 1, 2, 3, 4 và Mảnh vỡ bông tai", "Đóng");
+                            "Tab này chỉ nâng Bông tai Porata từ cấp 1 đến cấp 5\nMuốn nâng cấp 5 hãy dùng mục Bông tai Vô Cực", "Đóng");
                 }
                 break;
             case NANG_CAP_BONG_TAI_VO_CUC:
