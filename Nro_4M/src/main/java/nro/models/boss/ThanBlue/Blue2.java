@@ -4,20 +4,20 @@ package nro.models.boss.ThanBlue;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
+
 import nro.consts.ConstRatio;
 import nro.models.boss.Boss;
 import nro.models.boss.BossData;
 import nro.models.boss.BossFactory;
-import nro.models.map.ItemMap;
-import nro.models.player.Player;
-import nro.services.Service;
-import nro.utils.Util;
-
 import nro.models.boss.BossManager;
 import nro.models.item.ItemOption;
+import nro.models.map.ItemMap;
 import nro.models.map.Zone;
+import nro.models.player.Player;
+import nro.services.Service;
 import nro.services.SkillService;
 import nro.utils.SkillUtil;
+import nro.utils.Util;
 
 /**
  * @author Hoàng Việt - 0857853150
@@ -74,7 +74,7 @@ public class Blue2 extends Boss {
             ItemMap hop = new ItemMap(this.zone, 1407, 1,
                     this.location.x, this.zone.map.yPhysicInTop(this.location.x, this.location.y - 24), pl.id);
             Service.getInstance().dropItemMap(this.zone, hop);
-        } else if (Util.isTrue(2, 100)) {
+        } else if (Util.isTrue(1, 200)) {
             ItemMap hop = new ItemMap(this.zone, 1459, 1,
                     this.location.x, this.zone.map.yPhysicInTop(this.location.x, this.location.y - 24), pl.id);
             Service.getInstance().dropItemMap(this.zone, hop);
