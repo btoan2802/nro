@@ -51,13 +51,6 @@ public class CombineServiceNew {
     public static final int EP_SAO_TRANG_BI = 500;
     public static final int PHA_LE_HOA_TRANG_BI = 501;
     public static final int GO_SAO_PHA_LE_TRANG_BI = 502;
-
-    public static final int EP_SAO_TRANG_BI = 500;
-    public static final int PHA_LE_HOA_TRANG_BI = 501;
-    public static final int GO_SAO_PHA_LE_TRANG_BI = 502;
-    //    public static final int PHA_LE_HOA_TRANG_BI_X100 = 503;
-
-private static final int COST_GO_SAO_PHA_LE_TRANG_BI = 500000000;
 //    public static final int PHA_LE_HOA_TRANG_BI_X100 = 503;
 
     private static final int COST_GO_SAO_PHA_LE_TRANG_BI = 500000000;
