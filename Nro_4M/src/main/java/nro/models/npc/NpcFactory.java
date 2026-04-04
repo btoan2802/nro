@@ -3657,7 +3657,8 @@ if (!player.getSession().actived && player.playerTask.taskMain.id >= 21) {
                                                             + "|7|Trang bị của ngươi còn nhiều tiềm năng ẩn giấu.\n"
                                                             + "Ta có thể hỗ trợ ngươi cường hóa, hoặc tách bỏ tinh thể đã khảm.",
                                                             "Ép Sao\nTrang Bị",
-                                                            "Pha Lê\nHóa Trang Bị");
+                                                            "Pha Lê\nHóa Trang Bị",
+                                                            "Tách Bỏ\nTinh Thể");
                                                 case 1 ->
                                                     this.createOtherMenu(player, ConstNpc.CHUC_NANG_DOT_PHA,
                                                             "|5|ĐỘT PHÁ GIỚI HẠN TRANG BỊ\n"
@@ -3690,6 +3691,8 @@ if (!player.getSession().actived && player.playerTask.taskMain.id >= 21) {
                                                     CombineServiceNew.gI().openTabCombine(player, CombineServiceNew.EP_SAO_TRANG_BI);
                                                 case 1 ->
                                                     CombineServiceNew.gI().openTabCombine(player, CombineServiceNew.PHA_LE_HOA_TRANG_BI);
+                                                case 2 ->
+                                                    CombineServiceNew.gI().openTabCombine(player, CombineServiceNew.GO_SAO_PHA_LE_TRANG_BI);
                                             }
                                         } else if (player.iDMark.getIndexMenu() == ConstNpc.CHUC_NANG_DOT_PHA) {
                                             switch (select) {

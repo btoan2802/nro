@@ -1,0 +1,177 @@
+--- nro/models/npc/NpcFactory.java
++++ nro/models/npc/NpcFactory.java
+@@ -3657,7 +3657,8 @@
+                                                             + "|7|Trang bị của ngươi còn nhiều tiềm năng ẩn giấu.\n"
+                                                             + "Ta có thể hỗ trợ ngươi cường hóa, hoặc tách bỏ tinh thể đã khảm.",
+                                                             "Ép Sao\nTrang Bị",
+-                                                            "Pha Lê\nHóa Trang Bị");
++                                                            "Pha Lê\nHóa Trang Bị",
++                                                            "Tách Bỏ\nTinh Thể");
+                                                 case 1 ->
+                                                     this.createOtherMenu(player, ConstNpc.CHUC_NANG_DOT_PHA,
+                                                             "|5|ĐỘT PHÁ GIỚI HẠN TRANG BỊ\n"
+@@ -3690,6 +3691,8 @@
+                                                     CombineServiceNew.gI().openTabCombine(player, CombineServiceNew.EP_SAO_TRANG_BI);
+                                                 case 1 ->
+                                                     CombineServiceNew.gI().openTabCombine(player, CombineServiceNew.PHA_LE_HOA_TRANG_BI);
++                                                case 2 ->
++                                                    CombineServiceNew.gI().openTabCombine(player, CombineServiceNew.GO_SAO_PHA_LE_TRANG_BI);
+                                             }
+                                         } else if (player.iDMark.getIndexMenu() == ConstNpc.CHUC_NANG_DOT_PHA) {
+                                             switch (select) {
+--- nro/services/func/CombineServiceNew.java
++++ nro/services/func/CombineServiceNew.java
+@@ -50,8 +50,10 @@
+ 
+     public static final int EP_SAO_TRANG_BI = 500;
+     public static final int PHA_LE_HOA_TRANG_BI = 501;
+-//    public static final int CHUYEN_HOA_TRANG_BI = 502;
++    public static final int GO_SAO_PHA_LE_TRANG_BI = 502;
+ //    public static final int PHA_LE_HOA_TRANG_BI_X100 = 503;
++
++    private static final int COST_GO_SAO_PHA_LE_TRANG_BI = 500000000;
+ 
+     public static final int NANG_CAP_VAT_PHAM = 510;
+     public static final int NANG_CAP_BONG_TAI = 511;
+@@ -260,6 +262,48 @@
+                     }
+                 } else {
+                     this.baHatMit.createOtherMenu(player, ConstNpc.IGNORE_MENU, "Hãy hãy chọn 1 vật phẩm để pha lê hóa", "Đóng");
++                }
++                break;
++            }
++            case GO_SAO_PHA_LE_TRANG_BI: {
++                if (player.combineNew.itemsCombine.size() == 1) {
++                    Item item = player.combineNew.itemsCombine.get(0);
++                    if (item == null || !item.isNotNullItem()) {
++                        this.baHatMit.createOtherMenu(player, ConstNpc.IGNORE_MENU,
++                                "Hãy chọn 1 trang bị đã ép sao pha lê", "Đóng");
++                        return;
++                    }
++                    if (!hasSaoPhaLeDaEp(item)) {
++                        this.baHatMit.createOtherMenu(player, ConstNpc.IGNORE_MENU,
++                                "Trang bị này chưa có sao pha lê đã khảm", "Đóng");
++                        return;
++                    }
++                    Item itemMoi = createItemAfterRemoveSpl(item);
++                    if (itemMoi == null) {
++                        this.baHatMit.createOtherMenu(player, ConstNpc.IGNORE_MENU,
++                                "Vật phẩm này chưa được hỗ trợ tách sao pha lê", "Đóng");
++                        return;
++                    }
++
++                    String npcSay = item.template.name + "\n|2|";
++                    for (ItemOption io : item.itemOptions) {
++                        if (io.optionTemplate.id != 102 && io.optionTemplate.id != 107) {
++                            npcSay += io.getOptionString() + "\n";
++                        }
++                    }
++                    npcSay += "|7|Sau khi tách, trang bị sẽ trở về trạng thái ban đầu\n";
++                    npcSay += (player.inventory.gold < COST_GO_SAO_PHA_LE_TRANG_BI ? "|7|" : "|1|")
++                            + "Cần " + Util.numberToMoney(COST_GO_SAO_PHA_LE_TRANG_BI) + " vàng";
++
++                    if (player.inventory.gold < COST_GO_SAO_PHA_LE_TRANG_BI) {
++                        this.baHatMit.createOtherMenu(player, ConstNpc.IGNORE_MENU, npcSay, "Còn thiếu vàng");
++                    } else {
++                        this.baHatMit.createOtherMenu(player, ConstNpc.MENU_START_COMBINE, npcSay,
++                                "Tách bỏ\nTinh Thể");
++                    }
++                } else {
++                    this.baHatMit.createOtherMenu(player, ConstNpc.IGNORE_MENU,
++                            "Chỉ cần 1 trang bị đã ép sao pha lê", "Đóng");
+                 }
+                 break;
+             }
+@@ -1715,6 +1759,9 @@
+             case PHA_LE_HOA_TRANG_BI:
+                 phaLeHoaTrangBi(player);
+                 break;
++            case GO_SAO_PHA_LE_TRANG_BI:
++                goSaoPhaLeTrangBi(player);
++                break;
+             case NHAP_NGOC_RONG:
+                 nhapNgocRong(player);
+                 break;
+@@ -2452,6 +2499,49 @@
+         }
+ 
+         return itemMoi;
++    }
++
++    private void goSaoPhaLeTrangBi(Player player) {
++        if (player.combineNew.itemsCombine.size() != 1) {
++            Service.getInstance().sendThongBao(player, "Chỉ cần 1 trang bị đã ép sao pha lê");
++            return;
++        }
++        if (player.inventory.gold < COST_GO_SAO_PHA_LE_TRANG_BI) {
++            Service.getInstance().sendThongBao(player, "Không đủ vàng để tách sao pha lê");
++            return;
++        }
++
++        Item itemCu = player.combineNew.itemsCombine.get(0);
++        if (itemCu == null || !itemCu.isNotNullItem() || !hasSaoPhaLeDaEp(itemCu)) {
++            Service.getInstance().sendThongBao(player, "Trang bị này chưa có sao pha lê đã khảm");
++            return;
++        }
++
++        Item itemMoi = createItemAfterRemoveSpl(itemCu);
++        if (itemMoi == null) {
++            Service.getInstance().sendThongBao(player, "Vật phẩm này chưa được hỗ trợ tách sao pha lê");
++            return;
++        }
++
++        byte indexBag = InventoryService.gI().getIndexBag(player, itemCu);
++        if (indexBag < 0) {
++            Service.getInstance().sendThongBao(player, "Không tìm thấy vật phẩm trong hành trang");
++            return;
++        }
++
++        Item itemTruoc = ItemService.gI().copyItem(itemCu);
++        Item itemSau = ItemService.gI().copyItem(itemMoi);
++
++        player.inventory.gold -= COST_GO_SAO_PHA_LE_TRANG_BI;
++        player.inventory.itemsBag.set(indexBag, itemMoi);
++        player.combineNew.itemsCombine.clear();
++
++        sendEffectSuccessCombine(player);
++        FileUtils.writeGoSaoTrangBiLog(player, itemTruoc, itemSau);
++        InventoryService.gI().sendItemBags(player);
++        Service.getInstance().sendMoney(player);
++        Service.getInstance().sendThongBao(player, "Đã tách bỏ tinh thể đã khảm khỏi " + itemTruoc.template.name);
++        reOpenItemCombine(player);
+     }
+ 
+ //------------------------------------------------------------------------------------------------------------------------
+@@ -4950,6 +5040,12 @@
+                 || (item.template.id >= 1185 && item.template.id <= 1191));
+     }
+ 
++    private boolean hasSaoPhaLeDaEp(Item item) {
++        return item != null
++                && item.isNotNullItem()
++                && item.itemOptions.stream().anyMatch(io -> io.optionTemplate.id == 102 && io.param > 0);
++    }
++
+     private boolean isTrangBiPhaLeHoa(Item item) {
+         if (item != null && item.isNotNullItem()) {
+             if ((item.template.type < 5 || item.template.type == 32 || item.template.type == 5)) {
+@@ -5170,6 +5266,8 @@
+                 return "Ta sẽ phù phép\ncho trang bị của ngươi\ntrở lên mạnh mẽ";
+             case PHA_LE_HOA_TRANG_BI:
+                 return "Ta sẽ phù phép\ncho trang bị của ngươi\ntrở thành trang bị pha lê";
++            case GO_SAO_PHA_LE_TRANG_BI:
++                return "Ta sẽ tách bỏ\nnhững tinh thể đã khảm\nkhỏi trang bị của ngươi";
+             case AN_TRANG_BI:
+                 return "Ta sẽ phù phép\ncho trang bị của ngươi\ntrở thành trang bị Ấn";
+             case NHAP_NGOC_RONG:
+@@ -5249,6 +5347,10 @@
+                         + "(Áo, quần, găng, giày\n"
+                         + ", rađa hoặc Cải trang)\n"
+                         + "Sau đó chọn 'Nâng cấp'";
++            case GO_SAO_PHA_LE_TRANG_BI:
++                return "Chọn 1 trang bị đã ép sao pha lê\n"
++                        + "Sau đó chọn 'Tách bỏ Tinh Thể'\n"
++                        + "Trang bị sẽ trở về trạng thái ban đầu";
+             case AN_TRANG_BI:
+                 return "Vào hành trang\n"
+                         + "Chọn 1 Trang bị Thiên Sứ - Thánh Tôn\n"
