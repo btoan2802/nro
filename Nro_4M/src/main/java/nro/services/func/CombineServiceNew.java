@@ -879,16 +879,16 @@ public class CombineServiceNew {
                                 break;
                         }
                     }
-                    if (xuVang == null || xuVang.quantity < 20) {
+                    if (xuVang == null || xuVang.quantity < 100) {
                         this.baHatMit.createOtherMenu(player, ConstNpc.IGNORE_MENU,
-                                "Không đủ 20 " + ConstItem.NAME_XU_SERVER, "Đóng");
+                                "Không đủ 100 " + ConstItem.NAME_XU_SERVER, "Đóng");
                         return;
                     }
                     if (bongTai != null && manhVo != null && manhVo.quantity >= 99 && bongTai.template.id == 1550) {
 
                         player.combineNew.goldCombine = 500000;
                         player.combineNew.gemCombine = 1000;
-                        player.combineNew.ratioCombine = 10;
+                        player.combineNew.ratioCombine = 50;
 
                         String npcSay = "Bông tai Porata Vô Cực" + "\n|2|";
                         for (ItemOption io : bongTai.itemOptions) {
@@ -899,7 +899,7 @@ public class CombineServiceNew {
                             npcSay += "|1|Cần " + Util.numberToMoney(player.combineNew.goldCombine) + " vàng";
                             baHatMit.createOtherMenu(player, ConstNpc.MENU_START_COMBINE, npcSay,
                                     "Nâng cấp\ncần " + player.combineNew.gemCombine + " Hồng ngọc\n"
-                                    + "Và 20 " + ConstItem.NAME_XU_SERVER);
+                                    + "Và 100 " + ConstItem.NAME_XU_SERVER);
                         } else {
                             npcSay += "Còn thiếu " + Util.numberToMoney(player.combineNew.goldCombine - player.inventory.gold) + " vàng";
                             baHatMit.createOtherMenu(player, ConstNpc.IGNORE_MENU, npcSay, "Đóng");
@@ -949,23 +949,23 @@ public class CombineServiceNew {
                         switch (bongTai.template.id) {
                             case 1944:
                                 npcSay = "Bông tai Porata cấp 7" + "\n|2|";
-                                player.combineNew.ratioCombine = 20;
+                                player.combineNew.ratioCombine = 50;
                                 break;
                             case 1945:
                                 npcSay = "Bông tai Porata cấp 8" + "\n|2|";
-                                player.combineNew.ratioCombine = 20;
+                                player.combineNew.ratioCombine = 50;
                                 break;
                             case 1946:
                                 npcSay = "Bông tai Porata cấp 9" + "\n|2|";
-                                player.combineNew.ratioCombine = 20;
+                                player.combineNew.ratioCombine = 50;
                                 break;
                             case 1999:
                                 npcSay = "Bông tai Porata Vô Cực" + "\n|2|";
-                                player.combineNew.ratioCombine = 20;
+                                player.combineNew.ratioCombine = 50;
                                 break;
                             case 1550:
                                 npcSay = "Bông tai Porata cấp 5" + "\n|2|";
-                                player.combineNew.ratioCombine = 40;
+                                player.combineNew.ratioCombine = 70;
                                 break;
                             case 1129:
                                 npcSay = "Bông tai Porata cấp 4" + "\n|2|";
@@ -3390,8 +3390,8 @@ public class CombineServiceNew {
                     xuVang = item;
                 }
             }
-            if (xuVang == null || xuVang.quantity < 20) {
-                Service.getInstance().sendThongBao(player, "Không đủ 20 " + ConstItem.NAME_XU_SERVER);
+            if (xuVang == null || xuVang.quantity < 100) {
+                Service.getInstance().sendThongBao(player, "Không đủ 100 " + ConstItem.NAME_XU_SERVER);
                 return;
             }
 
