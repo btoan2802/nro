@@ -2788,7 +2788,7 @@ public class BossData {
     );
 
     public static final BossData ADMIN_1 = new BossData(
-            "Nguyễn Bảo Toàn", //name
+            "Nguyễn Bảo Toàn 1", //name
             ConstPlayer.TRAI_DAT, //gender
             Boss.DAME_NORMAL, //type dame
             Boss.HP_NORMAL, //type hp
@@ -2808,7 +2808,7 @@ public class BossData {
     );
 
     public static final BossData ADMIN_2 = new BossData(
-            "Nguyễn Bảo Toàn", //name
+            "Nguyễn Bảo Toàn 2", //name
             ConstPlayer.TRAI_DAT, //gender
             Boss.DAME_NORMAL, //type dame
             Boss.HP_NORMAL, //type hp
