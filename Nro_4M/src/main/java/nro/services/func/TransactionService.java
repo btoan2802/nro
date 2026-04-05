@@ -94,7 +94,7 @@ public class TransactionService implements Runnable {
                             trade.cancelTrade();
                             break;
                         }
-                        if (quantity > 99_990) {
+                        if (quantity > 99_999_999) {
                             Service.getInstance().sendThongBao(pl, "Không thể giao dịch vật phẩm có số lượng lớn hơn 99.990");
                             trade.cancelTrade();
                             break;

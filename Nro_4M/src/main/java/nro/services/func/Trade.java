@@ -178,41 +178,19 @@ public class Trade {
         }
     }
 
-    private boolean isItemCannotTran(Item item) { //Cấm giao dịch
+    private boolean isItemCannotTran(Item item) {
+    if (item == null || !item.isNotNullItem()) {
+        return true;
+    }
+    if (item.itemOptions != null) {
         for (ItemOption io : item.itemOptions) {
-            if (io.optionTemplate.id == 30) {
+            if (io != null && io.optionTemplate != null && io.optionTemplate.id == 30) {
                 return true;
             }
         }
-        switch (item.template.type) {
-            case 27: //
-                if (item.template.id != 457 && item.template.id == 590
-                        && item.template.id == 2013 && item.template.id == 2014
-                        && item.template.id == 2015 || isMinipet(item.template.id)) {
-                    return true;
-                } else if (item.template.id == 1215) {
-                    return true;
-                } else if (item.template.id == 2023) {
-                    return true;
-                } else {
-                    return false;
-                }
-            case 5: //cải trang
-            case 6: //đậu thần
-            case 7: //sách skill
-            case 8: //vật phẩm nhiệm vụ
-            case 11: //flag bag
-            case 13: //bùa
-            case 22: //vệ tinh
-            case 23: //ván bay
-            case 24: //ván bay vip
-            case 28: //cờ
-            case 32: //giáp tập luyện
-                return true;
-            default:
-                return false;
-        }
     }
+    return false;
+}
 
     public boolean isMinipet(int id) {
         return ItemData.IdMiniPet.contains(id);

@@ -7194,7 +7194,7 @@ if (!player.getSession().actived && player.playerTask.taskMain.id >= 21) {
                         public void confirmMenu(Player player, int select) {
                             if (canOpenNpc(player)) {
                                 switch (this.mapId) {
-                                    case 5 -> {
+                                    case 7 -> {
                                         if (player.iDMark.isBaseMenu()) {
                                             switch (select) {
                                                 case 0 ->
