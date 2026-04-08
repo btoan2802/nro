@@ -66,7 +66,11 @@ public class GoKuSky1 extends FutureBoss {
                 Service.getInstance().dropItemMap(this.zone, itemroi);
                 a += 5;
             }
-        } else {
+        } else if (Util.isTrue(5, 100)) {
+    ItemMap itemMap1155 = new ItemMap(this.zone, 1155, 1,
+            this.location.x, this.location.y, pl.id);
+    Service.getInstance().dropItemMap(this.zone, itemMap1155);
+}else {
             int[] set1 = {1156, 1157, 1158, 1159, 1160, 1161};
             ItemMap itemMap4 = new ItemMap(this.zone, set1[Util.nextInt(0, set1.length - 1)], 1, this.location.x, this.location.y, pl.id);
             Service.getInstance().dropItemMap(this.zone, itemMap4);

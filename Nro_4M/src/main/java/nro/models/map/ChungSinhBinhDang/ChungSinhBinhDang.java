@@ -227,12 +227,12 @@ public class ChungSinhBinhDang {
             List<Item> rewards = new ArrayList<>();
             
             Item thoiVang = ItemService.gI().createNewItem((short) ConstItem.THOI_VANG);
-            thoiVang.quantity = 25000;
+            thoiVang.quantity = 250000;
             winner.inventory.itemsMailBox.add(thoiVang);
             rewards.add(thoiVang);
 
             Item hongNgoc = ItemService.gI().createNewItem((short) ConstItem.HONG_NGOC);
-            hongNgoc.quantity = 25000;
+            hongNgoc.quantity = 50000;
             winner.inventory.itemsMailBox.add(hongNgoc);
             rewards.add(hongNgoc);
 

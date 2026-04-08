@@ -1735,7 +1735,12 @@ public class NPoint {
         }
         if (this.player.isPl() && this.player.fusion.typeFusion == ConstPlayer.HOP_THE_PORATA5) {
             for (Item item : this.player.inventory.itemsBag) {
-                if (item.isNotNullItem() && item.template.id == 1550) {
+                if (item.isNotNullItem() && (
+                        item.template.id == 1550
+                        || item.template.id == 1999
+                        || item.template.id == 1944
+                        || item.template.id == 1945
+                        || item.template.id == 1946)) {
                     for (ItemOption io : item.itemOptions) {
                         switch (io.optionTemplate.id) {
                             case 14: //Chí mạng+#%
