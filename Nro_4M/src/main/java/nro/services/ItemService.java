@@ -264,12 +264,12 @@ public class ItemService {
     giay.itemOptions.add(new ItemOption(53, 1));
     nhan.itemOptions.add(new ItemOption(53, 1));
 
-    // +700% HP
-    ao.itemOptions.add(new ItemOption(46, 700));
-    quan.itemOptions.add(new ItemOption(46, 700));
-    gang.itemOptions.add(new ItemOption(46, 700));
-    giay.itemOptions.add(new ItemOption(46, 700));
-    nhan.itemOptions.add(new ItemOption(46, 700));
+    // +700% GL
+    ao.itemOptions.add(new ItemOption(45, 700));
+    quan.itemOptions.add(new ItemOption(45, 700));
+    gang.itemOptions.add(new ItemOption(45, 700));
+    giay.itemOptions.add(new ItemOption(45, 700));
+    nhan.itemOptions.add(new ItemOption(45, 700));
 
     // khóa item
     ao.itemOptions.add(new ItemOption(30, 1));

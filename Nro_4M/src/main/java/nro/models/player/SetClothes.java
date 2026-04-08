@@ -30,8 +30,12 @@ public class SetClothes {
     public byte mahoangKI_1;
     public byte thienhoangGL_1;
     public byte thienhoangHP_1;
-    public byte thienhoangdbHP; // thêm dòng này
-    public byte thienhoangdbGL; // thêm dòng này
+    public byte nhanhoangdbKame = 0;
+    public byte nhanhoangdbKaioken = 0;
+    public byte mahoangdbLienHoan = 0;
+    public byte mahoangdbKI = 0;
+    public byte thienhoangdbGL = 0;
+    public byte thienhoangdbHP = 0;
 
     public byte songoku;
     public byte thienXinHang;
@@ -160,6 +164,7 @@ public class SetClothes {
                 boolean isActSet = false;
                 for (ItemOption io : item.itemOptions) {
                     switch (io.optionTemplate.id) {
+                        // Set 200%
                         case 223:
                             isActSet = true;
                             nhanhoangKM_1++;
@@ -184,14 +189,31 @@ public class SetClothes {
                             isActSet = true;
                             thienhoangHP_1++;
                             break;
-                        case 229:
+
+                        // Set 700% đặc biệt
+                        case 41: // (5 món tăng 700% Sát thương Kamejoko)
                             isActSet = true;
-                            thienhoangdbHP++;
+                            nhanhoangdbKame++;
                             break;
-                    
-                        case 230:
+                        case 42: // (5 món tăng 700% Sát thương Kaioken)
+                            isActSet = true;
+                            nhanhoangdbKaioken++;
+                            break;
+                        case 43: // (5 món tăng 700% Sát thương Liên hoàn)
+                            isActSet = true;
+                            mahoangdbLienHoan++;
+                            break;
+                        case 44: // (5 món tăng 700% KI)
+                            isActSet = true;
+                            mahoangdbKI++;
+                            break;
+                        case 45: // (5 món tăng 700% Sát thương Galick)
                             isActSet = true;
                             thienhoangdbGL++;
+                            break;
+                        case 46: // (5 món tăng 700% HP)
+                            isActSet = true;
+                            thienhoangdbHP++;
                             break;
                     }
                     if (isActSet) {
@@ -431,8 +453,12 @@ public class SetClothes {
         this.mahoangKI_1 = 0;
         this.thienhoangGL_1 = 0;
         this.thienhoangHP_1 = 0;
-        this.thienhoangdbHP = 0;
+        this.nhanhoangdbKame = 0;
+        this.nhanhoangdbKaioken = 0;
+        this.mahoangdbLienHoan = 0;
+        this.mahoangdbKI = 0;
         this.thienhoangdbGL = 0;
+        this.thienhoangdbHP = 0;
 
         this.Setbilltocdanh = 0;
         this.SetbilltocChuong = 0;

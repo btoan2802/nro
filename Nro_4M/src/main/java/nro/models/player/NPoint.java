@@ -2102,6 +2102,9 @@ public class NPoint {
         if (this.player.setClothes.mahoangKI_1 == 5) {
             this.mpMax *= 3;
         }
+        if (this.player.setClothes.mahoangdbKI == 5) {
+            this.mpMax += calPercent(this.mpMax, 700);
+        }
 
         //ngọc rồng đen 3 sao
         if (this.player.rewardBlackBall.timeOutOfDateReward[2] > System.currentTimeMillis()) {
@@ -2742,7 +2745,9 @@ public class NPoint {
                 if (this.player.setClothes.nhanhoangKM_1 == 5) {
                     percentXDame = 200;
                 }
-
+                if (this.player.setClothes.nhanhoangdbKame == 5) {
+                    percentXDame = 700;
+                }
                 if (this.TangKame == true) {
                     percentXDame += 30;
                 }
@@ -2821,6 +2826,9 @@ public class NPoint {
                 if (this.player.setClothes.nhanhoangKOK_1 == 5) {
                     percentXDame = 200;
                 }
+                if (this.player.setClothes.nhanhoangdbKaioken == 5) {
+                    percentXDame = 700;
+                }
 
                 if (this.TangKaioken == true) {
                     percentXDame += 30;
@@ -2849,7 +2857,10 @@ public class NPoint {
                 if (this.player.setClothes.mahoangLH_1 == 5) {
                     percentXDame = 200;
                 }
-
+                if (this.player.setClothes.mahoangdbLienHoan == 5) {
+                    percentXDame = 700;
+                }
+                
                 if (this.TangLienHoan == true) {
                     percentXDame += 30;
                 }
